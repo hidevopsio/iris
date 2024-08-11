@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 
 	"github.com/hidevopsio/iris/context"
 	"github.com/hidevopsio/iris/core/errors"

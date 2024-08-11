@@ -11,7 +11,7 @@ import (
 	"github.com/hidevopsio/iris/hero/di"
 	"github.com/hidevopsio/iris/macro"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 // BaseController is the optional controller interface, if it's

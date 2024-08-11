@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 // Client returns a new http.Client using

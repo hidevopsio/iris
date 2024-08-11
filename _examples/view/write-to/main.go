@@ -23,7 +23,7 @@ func main() {
 	app.Build()
 
 	// Or a string-buffered writer to use its body to send an e-mail
-	// for sending e-mails you can use the https://github.com/kataras/go-mailer
+	// for sending e-mails you can use the https://github.com/hidevopsio/go-mailer
 	// or any other third-party package you like.
 	//
 	// The template's parsed result will be written to that writer.

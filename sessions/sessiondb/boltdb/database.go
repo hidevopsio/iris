@@ -10,7 +10,7 @@ import (
 	"github.com/hidevopsio/iris/sessions"
 
 	bolt "github.com/etcd-io/bbolt"
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 // DefaultFileMode used as the default database's "fileMode"

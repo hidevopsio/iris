@@ -10,7 +10,7 @@ import (
 	"github.com/hidevopsio/iris"
 	"github.com/hidevopsio/iris/middleware/logger"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 const deleteFileOnExit = false

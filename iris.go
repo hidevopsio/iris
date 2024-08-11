@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 
 	// context for the handlers
 	"github.com/hidevopsio/iris/context"
@@ -265,7 +265,7 @@ func (app *Application) ConfigurationReadOnly() context.ConfigurationReadOnly {
 // Setting one or more outputs: app.Logger().SetOutput(io.Writer...)
 // Adding one or more outputs : app.Logger().AddOutput(io.Writer...)
 //
-// Adding custom levels requires import of the `github.com/kataras/golog` package:
+// Adding custom levels requires import of the `github.com/hidevopsio/golog` package:
 //
 //	First we create our level to a golog.Level
 //	in order to be used in the Log functions.

@@ -694,7 +694,7 @@ func (api *APIBuilder) StaticEmbedded(requestPath string, vdir string, assetFn f
 }
 
 // StaticEmbeddedGzip registers a route which can serve embedded gziped files
-// that are embedded using the https://github.com/kataras/bindata tool and only.
+// that are embedded using the https://github.com/hidevopsio/bindata tool and only.
 // It's 8 times faster than the `StaticEmbeddedHandler` with `go-bindata` but
 // it sends gzip response only, so the client must be aware that is expecting a gzip body
 // (browsers and most modern browsers do that, so you can use it without fair).

@@ -76,6 +76,12 @@ github.com/gorilla/websocket
 # github.com/hidevopsio/formBinder v0.0.0-20240811094544-2118e9d3668d
 ## explicit
 github.com/hidevopsio/formBinder
+# github.com/hidevopsio/go-uuid v0.0.0-20240811102623-0749af16addf
+## explicit; go 1.22.5
+github.com/hidevopsio/go-uuid
+# github.com/hidevopsio/golog v0.0.0-20240811112449-7523c52610de
+## explicit
+github.com/hidevopsio/golog
 # github.com/hidevopsio/httpexpect v0.0.0-20240811100504-92ed99bc8bec
 ## explicit; go 1.22.5
 github.com/hidevopsio/httpexpect
@@ -93,9 +99,6 @@ github.com/json-iterator/go
 # github.com/juju/errors v1.0.0
 ## explicit; go 1.18
 github.com/juju/errors
-# github.com/kataras/golog v0.0.0-20180321173939-03be10146386
-## explicit
-github.com/kataras/golog
 # github.com/kataras/pio v0.0.13
 ## explicit; go 1.20
 github.com/kataras/pio

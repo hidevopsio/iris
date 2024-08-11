@@ -8,7 +8,7 @@ import (
 	"github.com/hidevopsio/iris/context"
 	"github.com/hidevopsio/iris/hero/di"
 
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 var (

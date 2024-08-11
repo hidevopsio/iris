@@ -1,8 +1,6 @@
 module github.com/hidevopsio/iris
 
-go 1.22.5
-
-toolchain go1.22.6
+go 1.22.6
 
 require (
 	github.com/BurntSushi/toml v0.3.1
@@ -17,10 +15,11 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/websocket v1.4.0
 	github.com/hidevopsio/formBinder v0.0.0-20240811094544-2118e9d3668d
+	github.com/hidevopsio/go-uuid v0.0.0-20240811102623-0749af16addf
+	github.com/hidevopsio/golog v0.0.0-20240811115351-6b4a7711e704
 	github.com/hidevopsio/httpexpect v0.0.0-20240811100504-92ed99bc8bec
 	github.com/hidevopsio/i18n v0.0.0-20240811095331-eee3daa5c80f
 	github.com/json-iterator/go v1.1.5
-	github.com/kataras/golog v0.0.0-20180321173939-03be10146386
 	github.com/klauspost/compress v1.4.0
 	github.com/microcosm-cc/bluemonday v1.0.26
 	github.com/ryanuber/columnize v2.1.0+incompatible
@@ -42,10 +41,10 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/gopherjs/gopherjs v1.17.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
+	github.com/hidevopsio/pio v0.0.0-20240811115022-e705bbf749aa // indirect
 	github.com/imkira/go-interpol v1.1.0 // indirect
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/juju/errors v1.0.0 // indirect
-	github.com/kataras/pio v0.0.13 // indirect
 	github.com/klauspost/cpuid v1.3.1 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
@@ -66,7 +65,7 @@ require (
 	github.com/yudai/golcs v0.0.0-20170316035057-ecda9a501e82 // indirect
 	golang.org/x/exp v0.0.0-20240808152545-0cdaa3abc0fa // indirect
 	golang.org/x/net v0.28.0 // indirect
-	golang.org/x/sys v0.23.0 // indirect
+	golang.org/x/sys v0.24.0 // indirect
 	golang.org/x/text v0.17.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect

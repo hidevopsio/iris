@@ -11,7 +11,7 @@ import (
 	"github.com/hidevopsio/iris/sessions"
 
 	"github.com/dgraph-io/badger"
-	"github.com/kataras/golog"
+	"github.com/hidevopsio/golog"
 )
 
 // DefaultFileMode used as the default database's "fileMode"

@@ -4,9 +4,9 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/hidevopsio/golog"
 	"github.com/hidevopsio/iris/sessions"
 	"github.com/hidevopsio/iris/sessions/sessiondb/redis/service"
-	"github.com/kataras/golog"
 )
 
 // Database the redis back-end session database for the sessions.
