@@ -6,7 +6,7 @@ import (
 
 	"github.com/hidevopsio/iris"
 
-	prometheusMiddleware "github.com/iris-contrib/middleware/prometheus"
+	prometheusMiddleware "github.com/hidevopsio/middleware/prometheus"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

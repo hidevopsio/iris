@@ -12,7 +12,7 @@ func main() {
 		ctx.Header("Access-Control-Allow-Credentials", "true")
 		ctx.Header("Access-Control-Allow-Headers", "Access-Control-Allow-Origin,Content-Type")
 		ctx.Next()
-	} // or	"github.com/iris-contrib/middleware/cors"
+	} // or	"github.com/hidevopsio/middleware/cors"
 
 	v1 := app.Party("/api/v1", crs).AllowMethods(iris.MethodOptions) // <- important for the preflight.
 	{

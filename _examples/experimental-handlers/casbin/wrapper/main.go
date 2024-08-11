@@ -4,7 +4,7 @@ import (
 	"github.com/hidevopsio/iris"
 
 	"github.com/casbin/casbin"
-	cm "github.com/iris-contrib/middleware/casbin"
+	cm "github.com/hidevopsio/middleware/casbin"
 )
 
 // $ go get github.com/casbin/casbin

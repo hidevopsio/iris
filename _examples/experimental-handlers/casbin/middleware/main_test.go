@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
+	"github.com/hidevopsio/httpexpect"
 	"github.com/hidevopsio/iris/httptest"
-	"github.com/iris-contrib/httpexpect"
 )
 
 func TestCasbinMiddleware(t *testing.T) {

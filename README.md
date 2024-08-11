@@ -904,7 +904,7 @@ func main() {
 
 ### Testing
 
-Iris offers an incredible support for the [httpexpect](github.com/iris-contrib/httpexpect), a Testing Framework for web applications. However, you are able to use the standard Go's `net/http/httptest` package as well but in this example we will use the `kataras/iris/httptest`.
+Iris offers an incredible support for the [httpexpect](github.com/hidevopsio/httpexpect), a Testing Framework for web applications. However, you are able to use the standard Go's `net/http/httptest` package as well but in this example we will use the `kataras/iris/httptest`.
 
 ```go
 package main
@@ -959,20 +959,20 @@ First of all, the most correct way to begin with a web framework is to learn the
 | -----------|-------------|
 | Hasura hub starter project with a ready to deploy golang helloworld webapp with IRIS! | https://hasura.io/hub/project/hasura/hello-golang-iris |
 | A basic web app built in Iris for Go |https://github.com/gauravtiwari/go_iris_app |
-| A mini social-network created with the awesome Iris💖💖 | https://github.com/iris-contrib/Iris-Mini-Social-Network |
-| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/iris-contrib/iris-starter-kit |
+| A mini social-network created with the awesome Iris💖💖 | https://github.com/hidevopsio/Iris-Mini-Social-Network |
+| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/hidevopsio/iris-starter-kit |
 | Demo project with react using typescript and Iris | https://github.com/ionutvilie/react-ts |
-| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/iris-contrib/parrot |
-| Iris + Docker and Kubernetes | https://github.com/iris-contrib/cloud-native-go |
+| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/hidevopsio/parrot |
+| Iris + Docker and Kubernetes | https://github.com/hidevopsio/cloud-native-go |
 | Quickstart for Iris with Nanobox | https://guides.nanobox.io/golang/iris/from-scratch |
 -->
 
 1. [A basic web app built in Iris for Go](https://github.com/gauravtiwari/go_iris_app)
-2. [A mini social-network created with the awesome Iris💖💖](https://github.com/iris-contrib/Iris-Mini-Social-Network)
-3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/iris-contrib/iris-starter-kit)
+2. [A mini social-network created with the awesome Iris💖💖](https://github.com/hidevopsio/Iris-Mini-Social-Network)
+3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 4. [Demo project with react using typescript and Iris](https://github.com/ionutvilie/react-ts)
-5. [Self-hosted Localization Management Platform built with Iris and Angular](https://github.com/iris-contrib/parrot)
-6. [Iris + Docker and Kubernetes](https://github.com/iris-contrib/cloud-native-go)
+5. [Self-hosted Localization Management Platform built with Iris and Angular](https://github.com/hidevopsio/parrot)
+6. [Iris + Docker and Kubernetes](https://github.com/hidevopsio/cloud-native-go)
 7. [Quickstart for Iris with Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
@@ -980,7 +980,7 @@ First of all, the most correct way to begin with a web framework is to learn the
 
 ### Middleware
 
-Iris has a great collection of handlers[[1]](middleware/)[[2]](https://github.com/iris-contrib/middleware) that you can use side by side with your web apps. However you are not limited to them - you are free to use any third-party middleware that is compatible with the [net/http](https://golang.org/pkg/net/http/) package, [_examples/convert-handlers](_examples/convert-handlers) will show you the way.
+Iris has a great collection of handlers[[1]](middleware/)[[2]](https://github.com/hidevopsio/middleware) that you can use side by side with your web apps. However you are not limited to them - you are free to use any third-party middleware that is compatible with the [net/http](https://golang.org/pkg/net/http/) package, [_examples/convert-handlers](_examples/convert-handlers) will show you the way.
 
 Iris, unlike others, is 100% compatible with the standards and that's why the majority of the big companies that adapt Go to their workflow, like a very famous US Television Network, trust Iris; it's up-to-date and it will be always aligned with the std `net/http` package which is modernized by the Go Authors on each new release of the Go Programming Language.
 

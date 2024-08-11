@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/hidevopsio/iris"
 
-	"github.com/iris-contrib/middleware/newrelic"
+	"github.com/hidevopsio/middleware/newrelic"
 )
 
 func main() {

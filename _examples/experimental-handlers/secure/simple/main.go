@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/hidevopsio/iris"
 
-	"github.com/iris-contrib/middleware/secure"
+	"github.com/hidevopsio/middleware/secure"
 )
 
 func main() {

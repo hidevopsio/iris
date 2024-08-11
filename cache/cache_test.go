@@ -14,8 +14,8 @@ import (
 	"github.com/hidevopsio/iris/context"
 	"github.com/hidevopsio/iris/core/errors"
 
+	"github.com/hidevopsio/httpexpect"
 	"github.com/hidevopsio/iris/httptest"
-	"github.com/iris-contrib/httpexpect"
 )
 
 var (

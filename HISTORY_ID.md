@@ -122,7 +122,7 @@ _Happy Coding!_
 
 - The only one API Change is the [Application/Context/Router#RouteExists](https://godoc.org/github.com/hidevopsio/iris/core/router#Router.RouteExists), it accepts the `Context` as its first argument instead of last now.
 
-- Fix cors middleware via https://github.com/iris-contrib/middleware/commit/048e2be034ed172c6754448b8a54a9c55debad46, relative issue: https://github.com/hidevopsio/iris/issues/922 (still pending for a verification).
+- Fix cors middleware via https://github.com/hidevopsio/middleware/commit/048e2be034ed172c6754448b8a54a9c55debad46, relative issue: https://github.com/hidevopsio/iris/issues/922 (still pending for a verification).
 
 - Add `Context#NextOr` and `Context#NextOrNotFound`
 

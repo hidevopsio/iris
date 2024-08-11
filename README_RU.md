@@ -172,20 +172,20 @@ _Обновлено: [Вторник, 21 ноября 2017 г.](_benchmarks/READ
 | -----------|-------------|
 | Hasura hub starter project with a ready to deploy golang helloworld webapp with IRIS! | https://hasura.io/hub/project/hasura/hello-golang-iris |
 | A basic web app built in Iris for Go |https://github.com/gauravtiwari/go_iris_app |
-| A mini social-network created with the awesome Iris💖💖 | https://github.com/iris-contrib/Iris-Mini-Social-Network |
-| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/iris-contrib/iris-starter-kit |
+| A mini social-network created with the awesome Iris💖💖 | https://github.com/hidevopsio/Iris-Mini-Social-Network |
+| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/hidevopsio/iris-starter-kit |
 | Demo project with react using typescript and Iris | https://github.com/ionutvilie/react-ts |
-| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/iris-contrib/parrot |
-| Iris + Docker and Kubernetes | https://github.com/iris-contrib/cloud-native-go |
+| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/hidevopsio/parrot |
+| Iris + Docker and Kubernetes | https://github.com/hidevopsio/cloud-native-go |
 | Quickstart for Iris with Nanobox | https://guides.nanobox.io/golang/iris/from-scratch |
 -->
 
 1. [Основное веб-приложение, созданное в Iris for Go](https://github.com/gauravtiwari/go_iris_app)
-2. [Мини-социальная сеть, созданная с удивительным Iris💖💖](https://github.com/iris-contrib/Iris-Mini-Social-Network)
-3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/iris-contrib/iris-starter-kit)
+2. [Мини-социальная сеть, созданная с удивительным Iris💖💖](https://github.com/hidevopsio/Iris-Mini-Social-Network)
+3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 4. [Демо-проект с реакцией на использованием машинописного текста и Iris](https://github.com/ionutvilie/react-ts)
-5. [Самостоятельная платформа управления локализацией, построенная с помощью Iris и Angular](https://github.com/iris-contrib/parrot)
-6. [Iris + Docker and Kubernetes](https://github.com/iris-contrib/cloud-native-go)
+5. [Самостоятельная платформа управления локализацией, построенная с помощью Iris и Angular](https://github.com/hidevopsio/parrot)
+6. [Iris + Docker and Kubernetes](https://github.com/hidevopsio/cloud-native-go)
 7. [Быстрый запуск для Iris с Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [Cтартовый проект Hasura с готовностью применять веб-приложение Golang hello-world с IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
@@ -193,7 +193,7 @@ _Обновлено: [Вторник, 21 ноября 2017 г.](_benchmarks/READ
 
 ### Связующее программное обеспечение
 
-У Iris есть отличный сбор обработчиков[[1]](middleware/)[[2]](https://github.com/iris-contrib/middleware) которые вы можете использовать бок о бок с вашими веб-приложениями. Однако вы не ограничены ими - вы можете использовать стороннее программное обеспечение, совместимое с [net/http](https://golang.org/pkg/net/http/) пакетом, [_examples/convert-handlers](_examples/convert-handlers) покажут вам путь.
+У Iris есть отличный сбор обработчиков[[1]](middleware/)[[2]](https://github.com/hidevopsio/middleware) которые вы можете использовать бок о бок с вашими веб-приложениями. Однако вы не ограничены ими - вы можете использовать стороннее программное обеспечение, совместимое с [net/http](https://golang.org/pkg/net/http/) пакетом, [_examples/convert-handlers](_examples/convert-handlers) покажут вам путь.
 
 Iris, в отличие от других, на 100% совместим со стандартами, и именно поэтому большинство крупных компаний, которые адаптируют Go к своему рабочему процессу, как и очень известная телевизионная сеть США, доверяют Iris; это всегда актуально, и он будет приведен в соответствии с пакетом - `net/http`, который будет модернизирован Автором Go при каждом новом выпуске языка программирования Go навсегда.
 

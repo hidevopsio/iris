@@ -10,12 +10,12 @@
 // 'Forbidden' error response.
 package main
 
-// $ go get -u github.com/iris-contrib/middleware/...
+// $ go get -u github.com/hidevopsio/middleware/...
 
 import (
 	"github.com/hidevopsio/iris"
 
-	"github.com/iris-contrib/middleware/csrf"
+	"github.com/hidevopsio/middleware/csrf"
 )
 
 func main() {

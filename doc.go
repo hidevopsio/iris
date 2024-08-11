@@ -1821,7 +1821,7 @@ Examples:
 Middleware:
 
     https://github.com/hidevopsio/iris/tree/master/middleware
-    https://github.com/iris-contrib/middleware
+    https://github.com/hidevopsio/middleware
 
 Home Page:
 

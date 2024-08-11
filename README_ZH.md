@@ -167,20 +167,20 @@ _更新于: [2017年11月21日星期二](_benchmarks/README_UNIX.md)_
 | -----------|-------------|
 | Hasura hub starter project with a ready to deploy golang helloworld webapp with IRIS! | https://hasura.io/hub/project/hasura/hello-golang-iris |
 | A basic web app built in Iris for Go |https://github.com/gauravtiwari/go_iris_app |
-| A mini social-network created with the awesome Iris💖💖 | https://github.com/iris-contrib/Iris-Mini-Social-Network |
-| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/iris-contrib/iris-starter-kit |
+| A mini social-network created with the awesome Iris💖💖 | https://github.com/hidevopsio/Iris-Mini-Social-Network |
+| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/hidevopsio/iris-starter-kit |
 | Demo project with react using typescript and Iris | https://github.com/ionutvilie/react-ts |
-| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/iris-contrib/parrot |
-| Iris + Docker and Kubernetes | https://github.com/iris-contrib/cloud-native-go |
+| Self-hosted Localization Management Platform built with Iris and Angular | https://github.com/hidevopsio/parrot |
+| Iris + Docker and Kubernetes | https://github.com/hidevopsio/cloud-native-go |
 | Quickstart for Iris with Nanobox | https://guides.nanobox.io/golang/iris/from-scratch |
 -->
 
 1. [A basic web app built in Iris for Go](https://github.com/gauravtiwari/go_iris_app)
-2. [A mini social-network created with the awesome Iris💖💖](https://github.com/iris-contrib/Iris-Mini-Social-Network)
-3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/iris-contrib/iris-starter-kit)
+2. [A mini social-network created with the awesome Iris💖💖](https://github.com/hidevopsio/Iris-Mini-Social-Network)
+3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 4. [Demo project with react using typescript and Iris](https://github.com/ionutvilie/react-ts)
-5. [Self-hosted Localization Management Platform built with Iris and Angular](https://github.com/iris-contrib/parrot)
-6. [Iris + Docker and Kubernetes](https://github.com/iris-contrib/cloud-native-go)
+5. [Self-hosted Localization Management Platform built with Iris and Angular](https://github.com/hidevopsio/parrot)
+6. [Iris + Docker and Kubernetes](https://github.com/hidevopsio/cloud-native-go)
 7. [Quickstart for Iris with Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
@@ -188,7 +188,7 @@ _更新于: [2017年11月21日星期二](_benchmarks/README_UNIX.md)_
 
 ### 中间件
 
-Iris 拥有大量的中间件 [[1]](middleware/)[[2]](https://github.com/iris-contrib/middleware) 供您的 Web 应用程序使用。 不过，您并不局限于此，您可以自由使用与 [net/http](https://golang.org/pkg/net/http/) 包兼容的任何第三方中间件，相关示例 [_examples/convert-handlers](_examples/convert-handlers) 。
+Iris 拥有大量的中间件 [[1]](middleware/)[[2]](https://github.com/hidevopsio/middleware) 供您的 Web 应用程序使用。 不过，您并不局限于此，您可以自由使用与 [net/http](https://golang.org/pkg/net/http/) 包兼容的任何第三方中间件，相关示例 [_examples/convert-handlers](_examples/convert-handlers) 。
 
 ### 相关文章（英文）
 

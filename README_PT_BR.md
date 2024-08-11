@@ -177,20 +177,20 @@ padrão. Feito isso, você pode seguir as seguintes diretrizes:
 | -----------|-------------|
 | Hasura hub starter project with a ready to deploy golang helloworld webapp with IRIS! | https://hasura.io/hub/project/hasura/hello-golang-iris |
 | Web app básico utilizando o Iris |https://github.com/gauravtiwari/go_iris_app |
-| Uma mini rede social criada com o incrível Iris💖💖 | https://github.com/iris-contrib/Iris-Mini-Social-Network |
-| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/iris-contrib/iris-starter-kit |
+| Uma mini rede social criada com o incrível Iris💖💖 | https://github.com/hidevopsio/Iris-Mini-Social-Network |
+| Iris isomorphic react/hot reloadable/redux/css-modules starter kit | https://github.com/hidevopsio/iris-starter-kit |
 | Projeto demo usando react com typescript e Iris | https://github.com/ionutvilie/react-ts |
-| Plataforma de Gerenciamento de Localização auto hospedada criada com Iris e Angular | https://github.com/iris-contrib/parrot |
-| Iris + Docker e Kubernetes | https://github.com/iris-contrib/cloud-native-go |
+| Plataforma de Gerenciamento de Localização auto hospedada criada com Iris e Angular | https://github.com/hidevopsio/parrot |
+| Iris + Docker e Kubernetes | https://github.com/hidevopsio/cloud-native-go |
 | Quickstart do Iris com Nanobox | https://guides.nanobox.io/golang/iris/from-scratch |
 -->
 
 1. [Web app básico utilizando o Iris](https://github.com/gauravtiwari/go_iris_app)
-2. [Uma mini rede social criada com o incrível Iris💖💖] (https://github.com/iris-contrib/Iris-Mini-Social-Network)
-3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/iris-contrib/iris-starter-kit)
+2. [Uma mini rede social criada com o incrível Iris💖💖] (https://github.com/hidevopsio/Iris-Mini-Social-Network)
+3. [Iris isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 4. [Projeto demo usando react com typescript e Iris](https://github.com/ionutvilie/react-ts)
-5. [Plataforma de Gerenciamento de Localização auto hospedada criada com Iris e Angular](https://github.com/iris-contrib/parrot)
-6. [Iris + Docker e Kubernetes](https://github.com/iris-contrib/cloud-native-go)
+5. [Plataforma de Gerenciamento de Localização auto hospedada criada com Iris e Angular](https://github.com/hidevopsio/parrot)
+6. [Iris + Docker e Kubernetes](https://github.com/hidevopsio/cloud-native-go)
 7. [Quickstart do Iris com Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [Um projeto Hasura para iniciantes pronto para o deply com um app Golang hello-world utilizando o IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
@@ -198,7 +198,7 @@ padrão. Feito isso, você pode seguir as seguintes diretrizes:
 
 ### Middleware
 
-Iris tem uma ótima coleção de handlers[[1]](middleware/)[[2]](https://github.com/iris-contrib/middleware) os quais você pode utilizar lado a lado com seus web apps. Entretanto, você não esta limitado a eles - você pode utilizar qualquer middleware de terceiros desde que seja compatível com a biblioteca [net/http](https://golang.org/pkg/net/http/), [_examples/convert-handlers](_examples/convert-handlers) é um exemplo que pode ser tomado como base para tal.
+Iris tem uma ótima coleção de handlers[[1]](middleware/)[[2]](https://github.com/hidevopsio/middleware) os quais você pode utilizar lado a lado com seus web apps. Entretanto, você não esta limitado a eles - você pode utilizar qualquer middleware de terceiros desde que seja compatível com a biblioteca [net/http](https://golang.org/pkg/net/http/), [_examples/convert-handlers](_examples/convert-handlers) é um exemplo que pode ser tomado como base para tal.
 
 Iris, ao contrário dos demais, é 100% compatível com os padrões e esse é o motivo pelo qual a maioria das grandes empresas que inserem Go em seu fluxo operacional, tal qual a famosa US Television Network, usam e confiam no Iris; Ele é atualizado com frequencia e sempre estará alinhado com o padrão da biblioteca `net/http` que é periodicamente modernizada pelos autores da linguagem Go a cada novo release.
 

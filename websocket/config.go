@@ -6,8 +6,6 @@ import (
 	"time"
 
 	"github.com/hidevopsio/iris/context"
-
-	"github.com/iris-contrib/go.uuid"
 )
 
 const (

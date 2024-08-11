@@ -14,7 +14,7 @@ import (
 	"github.com/hidevopsio/iris"
 
 	"github.com/dgrijalva/jwt-go"
-	jwtmiddleware "github.com/iris-contrib/middleware/jwt"
+	jwtmiddleware "github.com/hidevopsio/middleware/jwt"
 )
 
 func myHandler(ctx iris.Context) {

@@ -18,7 +18,7 @@ It doesn't always contain the "best ways" but it does cover each important featu
 ```bash
 cd _examples && go get ./...
 # or
-go get github.com/iris-contrib/middleware/...
+go get github.com/hidevopsio/middleware/...
 go get github.com/betacraft/yaag/irisyaag
 go get github.com/markbates/goth/...
 go get github.com/casbin/casbin
@@ -57,7 +57,7 @@ $ go run main.go
 - [Tutorial: A Todo MVC Application using Iris and Vue.js](https://hackernoon.com/a-todo-mvc-application-using-iris-and-vue-js-5019ff870064)
 - [Tutorial: URL Shortener using BoltDB](https://medium.com/@kataras/a-url-shortener-service-using-go-iris-and-bolt-4182f0b00ae7)
 - [Tutorial: How to turn your Android Device into a fully featured Web Server (**MUST**)](https://twitter.com/ThePracticalDev/status/892022594031017988)
-- [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/iris-contrib/parrot)
+- [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/hidevopsio/parrot)
 - [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 - [Tutorial: DropzoneJS Uploader](tutorial/dropzonejs)
 - [Tutorial: Caddy](tutorial/caddy)

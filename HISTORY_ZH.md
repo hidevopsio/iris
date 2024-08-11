@@ -117,7 +117,7 @@ This history entry is not translated yet to the Chinese language yet, please ref
 
 - 只有一项 API 更改 [Application/Context/Router#RouteExists](https://godoc.org/github.com/hidevopsio/iris/core/router#Router.RouteExists), 将 `Context` 作为第一参数，而不是最后一个。
 
-- 修正 cors 中间件 https://github.com/iris-contrib/middleware/commit/048e2be034ed172c6754448b8a54a9c55debad46, 相关问题: https://github.com/hidevopsio/iris/issues/922 (目前仍在等待验证).
+- 修正 cors 中间件 https://github.com/hidevopsio/middleware/commit/048e2be034ed172c6754448b8a54a9c55debad46, 相关问题: https://github.com/hidevopsio/iris/issues/922 (目前仍在等待验证).
 
 - 添加 `Context#NextOr` 和 `Context#NextOrNotFound` 方法
 

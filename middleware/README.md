@@ -17,16 +17,16 @@ Most of the experimental handlers are ported to work with _iris_'s handler form,
 
 | Middleware | Description | Example |
 | -----------|--------|-------------|
-| [jwt](https://github.com/iris-contrib/middleware/tree/master/jwt) | Middleware checks for a JWT on the `Authorization` header on incoming requests and decodes it. | [iris-contrib/middleware/jwt/_example](https://github.com/iris-contrib/middleware/tree/master/jwt/_example) |
-| [cors](https://github.com/iris-contrib/middleware/tree/master/cors) | HTTP Access Control. | [iris-contrib/middleware/cors/_example](https://github.com/iris-contrib/middleware/tree/master/cors/_example) |
-| [secure](https://github.com/iris-contrib/middleware/tree/master/secure) | Middleware that implements a few quick security wins. | [iris-contrib/middleware/secure/_example](https://github.com/iris-contrib/middleware/tree/master/secure/_example/main.go) |
-| [tollbooth](https://github.com/iris-contrib/middleware/tree/master/tollboothic) | Generic middleware to rate-limit HTTP requests. | [iris-contrib/middleware/tollbooth/_examples/limit-handler](https://github.com/iris-contrib/middleware/tree/master/tollbooth/_examples/limit-handler) |
-| [cloudwatch](https://github.com/iris-contrib/middleware/tree/master/cloudwatch) |  AWS cloudwatch metrics middleware. |[iris-contrib/middleware/cloudwatch/_example](https://github.com/iris-contrib/middleware/tree/master/cloudwatch/_example) |
-| [new relic](https://github.com/iris-contrib/middleware/tree/master/newrelic) | Official [New Relic Go Agent](https://github.com/newrelic/go-agent). | [iris-contrib/middleware/newrelic/_example](https://github.com/iris-contrib/middleware/tree/master/newrelic/_example) |
-| [prometheus](https://github.com/iris-contrib/middleware/tree/master/prometheus)| Easily create metrics endpoint for the [prometheus](http://prometheus.io) instrumentation tool | [iris-contrib/middleware/prometheus/_example](https://github.com/iris-contrib/middleware/tree/master/prometheus/_example) |
-| [casbin](https://github.com/iris-contrib/middleware/tree/master/casbin)| An authorization library that supports access control models like ACL, RBAC, ABAC | [iris-contrib/middleware/casbin/_examples](https://github.com/iris-contrib/middleware/tree/master/casbin/_examples) |
-| [raven](https://github.com/iris-contrib/middleware/tree/master/raven)| Sentry client in Go | [raven/_example](https://github.com/iris-contrib/middleware/blob/master/raven/_example/main.go) |
-| [csrf](https://github.com/iris-contrib/middleware/tree/master/csrf)| Cross-Site Request Forgery Protection | [csrf/_example](https://github.com/iris-contrib/middleware/blob/master/csrf/_example/main.go) (hard-tested for Iris) **NEW** |
+| [jwt](https://github.com/hidevopsio/middleware/tree/master/jwt) | Middleware checks for a JWT on the `Authorization` header on incoming requests and decodes it. | [iris-contrib/middleware/jwt/_example](https://github.com/hidevopsio/middleware/tree/master/jwt/_example) |
+| [cors](https://github.com/hidevopsio/middleware/tree/master/cors) | HTTP Access Control. | [iris-contrib/middleware/cors/_example](https://github.com/hidevopsio/middleware/tree/master/cors/_example) |
+| [secure](https://github.com/hidevopsio/middleware/tree/master/secure) | Middleware that implements a few quick security wins. | [iris-contrib/middleware/secure/_example](https://github.com/hidevopsio/middleware/tree/master/secure/_example/main.go) |
+| [tollbooth](https://github.com/hidevopsio/middleware/tree/master/tollboothic) | Generic middleware to rate-limit HTTP requests. | [iris-contrib/middleware/tollbooth/_examples/limit-handler](https://github.com/hidevopsio/middleware/tree/master/tollbooth/_examples/limit-handler) |
+| [cloudwatch](https://github.com/hidevopsio/middleware/tree/master/cloudwatch) |  AWS cloudwatch metrics middleware. |[iris-contrib/middleware/cloudwatch/_example](https://github.com/hidevopsio/middleware/tree/master/cloudwatch/_example) |
+| [new relic](https://github.com/hidevopsio/middleware/tree/master/newrelic) | Official [New Relic Go Agent](https://github.com/newrelic/go-agent). | [iris-contrib/middleware/newrelic/_example](https://github.com/hidevopsio/middleware/tree/master/newrelic/_example) |
+| [prometheus](https://github.com/hidevopsio/middleware/tree/master/prometheus)| Easily create metrics endpoint for the [prometheus](http://prometheus.io) instrumentation tool | [iris-contrib/middleware/prometheus/_example](https://github.com/hidevopsio/middleware/tree/master/prometheus/_example) |
+| [casbin](https://github.com/hidevopsio/middleware/tree/master/casbin)| An authorization library that supports access control models like ACL, RBAC, ABAC | [iris-contrib/middleware/casbin/_examples](https://github.com/hidevopsio/middleware/tree/master/casbin/_examples) |
+| [raven](https://github.com/hidevopsio/middleware/tree/master/raven)| Sentry client in Go | [raven/_example](https://github.com/hidevopsio/middleware/blob/master/raven/_example/main.go) |
+| [csrf](https://github.com/hidevopsio/middleware/tree/master/csrf)| Cross-Site Request Forgery Protection | [csrf/_example](https://github.com/hidevopsio/middleware/blob/master/csrf/_example/main.go) (hard-tested for Iris) **NEW** |
 Third-Party Handlers
 ------------
 

@@ -16,7 +16,7 @@
 - [教程: A Todo MVC Application using Iris and Vue.js](https://hackernoon.com/a-todo-mvc-application-using-iris-and-vue-js-5019ff870064)
 - [教程: 结合 BoltDB 生成短网址](https://medium.com/@kataras/a-url-shortener-service-using-go-iris-and-bolt-4182f0b00ae7)
 - [教程: 用安卓设备搭建服务器 (**MUST**)](https://twitter.com/ThePracticalDev/status/892022594031017988)
-- [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/iris-contrib/parrot)
+- [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/hidevopsio/parrot)
 - [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 - [教程: DropzoneJS 上传](tutorial/dropzonejs)
 - [教程: Caddy 服务器使用](tutorial/caddy)

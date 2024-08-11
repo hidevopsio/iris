@@ -1,5 +1,5 @@
 # Install iris-contrib/middleware
 
 ```sh
-$ go get -u github.com/iris-contrib/middleware/...
+$ go get -u github.com/hidevopsio/middleware/...
 ```

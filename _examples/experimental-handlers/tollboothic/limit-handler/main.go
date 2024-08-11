@@ -4,7 +4,7 @@ import (
 	"github.com/hidevopsio/iris"
 
 	"github.com/didip/tollbooth"
-	"github.com/iris-contrib/middleware/tollboothic"
+	"github.com/hidevopsio/middleware/tollboothic"
 )
 
 // $ go get github.com/didip/tollbooth

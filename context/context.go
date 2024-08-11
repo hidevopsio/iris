@@ -26,7 +26,7 @@ import (
 
 	"github.com/Shopify/goreferrer"
 	"github.com/fatih/structs"
-	formbinder "github.com/iris-contrib/formBinder"
+	formbinder "github.com/hidevopsio/formBinder"
 	"github.com/json-iterator/go"
 	"github.com/microcosm-cc/bluemonday"
 	"gopkg.in/russross/blackfriday.v2"

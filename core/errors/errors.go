@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"runtime"
 	"strings"
-
-	"github.com/iris-contrib/go.uuid"
 )
 
 var (
