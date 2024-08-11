@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/hidevopsio/go-uuid"
 	"runtime"
+	"strings"
 )
 
 var (
