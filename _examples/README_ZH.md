@@ -3,7 +3,7 @@
 
 请先学习如何使用 [net/http](https://golang.org/pkg/net/http/) 
 
-这里包含大部分 [iris](https://github.com/kataras/iris) 网络微框架的简单使用示例
+这里包含大部分 [iris](https://github.com/hidevopsio/iris) 网络微框架的简单使用示例
 
 这些示例不一定是最优解，但涵盖了 Iris 的大部分重要功能。
 
@@ -17,7 +17,7 @@
 - [教程: 结合 BoltDB 生成短网址](https://medium.com/@kataras/a-url-shortener-service-using-go-iris-and-bolt-4182f0b00ae7)
 - [教程: 用安卓设备搭建服务器 (**MUST**)](https://twitter.com/ThePracticalDev/status/892022594031017988)
 - [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/iris-contrib/parrot)
-- [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/kataras/iris-starter-kit)
+- [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 - [教程: DropzoneJS 上传](tutorial/dropzonejs)
 - [教程: Caddy 服务器使用](tutorial/caddy)
 - [教程: Iris + MongoDB](https://medium.com/go-language/iris-go-framework-mongodb-552e349eab9c)
@@ -142,8 +142,8 @@ Serve custom controller's struct's methods as handlers with custom paths(even wi
 
 ```go
 import (
-    "github.com/kataras/iris"
-    "github.com/kataras/iris/mvc"
+    "github.com/hidevopsio/iris"
+    "github.com/hidevopsio/iris/mvc"
 )
 
 func main() {
@@ -200,7 +200,7 @@ useful to call middlewares or when many methods use the same collection of data.
 Optional `EndRequest(ctx)` function to perform any finalization after any method executed.
 
 Inheritance, recursively, see for example our `mvc.SessionController`, it has the `Session *sessions.Session` and `Manager *sessions.Sessions` as embedded fields
-which are filled by its `BeginRequest`, [here](https://github.com/kataras/iris/blob/master/mvc/session_controller.go).
+which are filled by its `BeginRequest`, [here](https://github.com/hidevopsio/iris/blob/master/mvc/session_controller.go).
 This is just an example, you could use the `sessions.Session` which returned from the manager's `Start` as a dynamic dependency to the MVC Application, i.e
 `mvcApp.Register(sessions.New(sessions.Config{Cookie: "iris_session_id"}).Start)`.
 
@@ -248,7 +248,7 @@ func(c *ExampleController) Get() string |
                                 mvc.Result or (mvc.Result, error)
 ```
 
-where [mvc.Result](https://github.com/kataras/iris/blob/master/mvc/func_result.go) is an interface which contains only that function: `Dispatch(ctx iris.Context)`.
+where [mvc.Result](https://github.com/hidevopsio/iris/blob/master/mvc/func_result.go) is an interface which contains only that function: `Dispatch(ctx iris.Context)`.
 
 ## Iris MVC 模式代码复用
 
@@ -380,7 +380,7 @@ You can serve [quicktemplate](https://github.com/valyala/quicktemplate) and [her
 
 #### 更多
 
-https://github.com/kataras/iris/tree/master/middleware#third-party-handlers
+https://github.com/hidevopsio/iris/tree/master/middleware#third-party-handlers
 
 ### 自动 API 文档
 
@@ -394,7 +394,7 @@ The `httptest` package is your way for end-to-end HTTP testing, it uses the http
 
 ### 缓存
 
-Iris 独立缓存包 [package](https://github.com/kataras/iris/tree/master/cache).
+Iris 独立缓存包 [package](https://github.com/hidevopsio/iris/tree/master/cache).
 
 - [简单示例](cache/simple/main.go)
 - [客户端 (304)](cache/client-side/main.go) - context 方法
@@ -408,7 +408,7 @@ Iris 独立缓存包 [package](https://github.com/kataras/iris/tree/master/cache
 
 ### Sessions
 
-Iris session 管理独立包 [package](https://github.com/kataras/iris/tree/master/sessions).
+Iris session 管理独立包 [package](https://github.com/hidevopsio/iris/tree/master/sessions).
 
 - [Overview](sessions/overview/main.go)
 - [Standalone](sessions/standalone/main.go)
@@ -422,7 +422,7 @@ Iris session 管理独立包 [package](https://github.com/kataras/iris/tree/mast
 
 ### Websockets
 
-iris websocket library lives on its own [package](https://github.com/kataras/iris/tree/master/websocket).
+iris websocket library lives on its own [package](https://github.com/hidevopsio/iris/tree/master/websocket).
 
 The package is designed to work with raw websockets although its API is similar to the famous [socket.io](https://socket.io). I have read an article recently and I felt very contented about my decision to design a **fast** websocket-**only** package for Iris and not a backwards socket.io-like package. You can read that article by following this link: https://medium.com/@ivanderbyl/why-you-don-t-need-socket-io-6848f1c871cd.
 
@@ -437,10 +437,10 @@ The package is designed to work with raw websockets although its API is similar 
 
 ### Typescript 自动化工具
 
-Typescript 自动化工具独立库： [https://github.com/kataras/iris/tree/master/typescript](https://github.com/kataras/iris/tree/master/typescript) **包含相关示例**
+Typescript 自动化工具独立库： [https://github.com/hidevopsio/iris/tree/master/typescript](https://github.com/hidevopsio/iris/tree/master/typescript) **包含相关示例**
 
 ### 大兄弟
 
-进一步学习可通过 [godocs](https://godoc.org/github.com/kataras/iris) 和 https://docs.iris-go.com
+进一步学习可通过 [godocs](https://godoc.org/github.com/hidevopsio/iris) 和 https://docs.iris-go.com
 
-不要忘记点赞 [star or watch](https://github.com/kataras/iris/stargazers) 这个项目会一直跟进最新趋势。
+不要忘记点赞 [star or watch](https://github.com/hidevopsio/iris/stargazers) 这个项目会一直跟进最新趋势。

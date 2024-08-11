@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 var sess = sessions.New(sessions.Config{

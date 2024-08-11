@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/macro"
-	"github.com/kataras/iris/macro/handler"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/macro"
+	"github.com/hidevopsio/iris/macro/handler"
 )
 
 // Route contains the information about a registered Route.

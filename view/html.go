@@ -115,6 +115,7 @@ func (s *HTMLEngine) Reload(developmentMode bool) *HTMLEngine {
 //
 // missingkey: Control the behavior during execution if a map is
 // indexed with a key that is not present in the map.
+//
 //	"missingkey=default" or "missingkey=invalid"
 //		The default behavior: Do nothing and continue execution.
 //		If printed, the result of the index operation is the string
@@ -123,7 +124,6 @@ func (s *HTMLEngine) Reload(developmentMode bool) *HTMLEngine {
 //		The operation returns the zero value for the map type's element.
 //	"missingkey=error"
 //		Execution stops immediately with an error.
-//
 func (s *HTMLEngine) Option(opt ...string) *HTMLEngine {
 	s.rmu.Lock()
 	s.options = append(s.options, opt...)
@@ -148,7 +148,8 @@ func (s *HTMLEngine) Delims(left, right string) *HTMLEngine {
 // for the template file with its extension.
 //
 // Example: HTML("./templates", ".html").Layout("layouts/mainLayout.html")
-//         // mainLayout.html is inside: "./templates/layouts/".
+//
+//	// mainLayout.html is inside: "./templates/layouts/".
 //
 // Note: Layout can be changed for a specific call
 // action with the option: "layout" on the iris' context.Render function.
@@ -197,12 +198,12 @@ func (s *HTMLEngine) Load() error {
 	// }()
 
 	if s.assetFn != nil && s.namesFn != nil {
-		// NOT NECESSARY "fix" of https://github.com/kataras/iris/issues/784,
+		// NOT NECESSARY "fix" of https://github.com/hidevopsio/iris/issues/784,
 		// IT'S BAD CODE WRITTEN WE KEEP HERE ONLY FOR A REMINDER
 		// for any future questions.
 		//
 		// if strings.HasPrefix(s.directory, "../") {
-		// 	// this and some more additions are fixes for https://github.com/kataras/iris/issues/784
+		// 	// this and some more additions are fixes for https://github.com/hidevopsio/iris/issues/784
 		// 	// however, the dev SHOULD
 		// 	// run the go-bindata command from the "$dir" parent directory
 		// 	// and just use the ./$dir in the declaration,
@@ -309,7 +310,7 @@ func (s *HTMLEngine) loadAssets() error {
 
 	for _, path := range names {
 		// if filepath.IsAbs(virtualDirectory) {
-		// 	// fixes https://github.com/kataras/iris/issues/784
+		// 	// fixes https://github.com/hidevopsio/iris/issues/784
 		// 	// we take the absolute fullpath of the template file.
 		// 	pathFileAbs, err := filepath.Abs(path)
 		// 	if err != nil {
@@ -342,7 +343,7 @@ func (s *HTMLEngine) loadAssets() error {
 			// cpath, err := filepath.Abs(".")
 			// if err == nil {
 			// 	// set the path as relative to "path" of the current working dir.
-			// 	// fixes https://github.com/kataras/iris/issues/784
+			// 	// fixes https://github.com/hidevopsio/iris/issues/784
 			// 	rpath, err := filepath.Rel(cpath, path)
 			// 	// fix view: Asset  not found for path ''
 			// 	if err == nil && rpath != "" {

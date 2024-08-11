@@ -2,7 +2,7 @@
 
 <a href="https://iris-go.com"> <img align="right" width="169px" src="https://iris-go.com/images/icon.svg?v=a" title="logo created by @merry.dii" /> </a>
 
-[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/releases)
+[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)
 
 Iris adalah web framework yang cepat, sederhana namun berfitur lengkap dan sangat efisien untuk Go.
 
@@ -10,7 +10,7 @@ Iris menyediakan fondasi yang indah expresif dan mudah digunakan untuk website a
 
 Akhirnya, framework nyata yang setara dengan expressjs untuk Go Programming Language.
 
-Pelajari apa yang [orang lain katakan tentang Iris](#support) dan [star](https://github.com/kataras/iris/stargazers) github repository ini untuk [mendapatkan informasi terbaru](https://facebook.com/iris.framework).
+Pelajari apa yang [orang lain katakan tentang Iris](#support) dan [star](https://github.com/hidevopsio/iris/stargazers) github repository ini untuk [mendapatkan informasi terbaru](https://facebook.com/iris.framework).
 
 ## Donatur
 
@@ -25,7 +25,7 @@ $ cat example.go
 ```go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -88,7 +88,7 @@ _
 Satu - satunya persyaratan adalah [Go Programming Language](https://golang.org/dl/)
 
 ```sh
-$ go get -u github.com/kataras/iris
+$ go get -u github.com/hidevopsio/iris
 ```
 
 Iris mengambil keuntungan dari fitur [vendor directory](https://docs.google.com/document/d/1Bz5-UB7g2uPBdOx-rw5t9MxJwkfpx90cqG9AFL0JAYo). Anda mendapatkan build yang benar - benar dapat direproduksi, karena metode ini menjaga terhadap penggantian nama dan penghapusan di upstream.
@@ -107,7 +107,7 @@ _Diperbarui pada: [Tuesday, 21 November 2017](_benchmarks/README_UNIX.md)_
 ## Dukungan
 
 - File [HISTORY](HISTORY_ID.md#tu-30-october-2018--v1102) adalah sahabat anda, file tersebut memiliki informasi terkait fitur dan perubahan terbaru
-- Apakah anda menemukan bug? Laporkan itu melalui [github issues](https://github.com/kataras/iris/issues)
+- Apakah anda menemukan bug? Laporkan itu melalui [github issues](https://github.com/hidevopsio/iris/issues)
 - Apakah anda memiliki pertanyaan atau butuh untuk bicara kepada seseorang yang sudah berpengalaman untuk menyelesaikan masalah secara langsung? Gabung bersama kami di [community chat](https://chat.iris-go.com)
 - Lengkapi laporan user-experience berbasis formulir kami dengan tekan [disini](https://docs.google.com/forms/d/e/1FAIpQLSdCxZXPANg_xHWil4kVAdhmh7EBBHQZ_4_xSZVDL-oCC_z5pA/viewform?usp=sf_link)
 - Apakah anda menyukai framework ini? Tweet sesuatu tentang ini! Orang - orang yang sudah berbicara:
@@ -155,14 +155,14 @@ _Diperbarui pada: [Tuesday, 21 November 2017](_benchmarks/README_UNIX.md)_
 
 Untuk informasi lebih lanjut mengenai kontribusi terhadap project Iris, mohon untuk mengecek file [CONTRIBUTING.md](CONTRIBUTING.md).
 
-[Daftar seluruh Kontributor](https://github.com/kataras/iris/graphs/contributors)
+[Daftar seluruh Kontributor](https://github.com/hidevopsio/iris/graphs/contributors)
 
 ## Belajar
 
 Pertama - tama, cara yang paling tepat untuk memulai dengan web framework adalah dengan mempelajari dasar dari bahasa pemrograman dan kemampuan dasar `http`, apabila aplikasi web anda adalah proyek pribadi yang sangat sederhana tanpa kebutuhan kinerja dan pemeliharaan, anda dapat melanjutkan hanya dengan standard packages. Setelah itu, ikut petunjuknya:
 
 - Kunjungi **100+1** **[contoh](_examples)** dan beberapa [iris starter kits](#iris-starter-kits) yang kami buat untuk anda
-- Baca [godocs](https://godoc.org/github.com/kataras/iris) untuk penjelasan yang lebih detail
+- Baca [godocs](https://godoc.org/github.com/hidevopsio/iris) untuk penjelasan yang lebih detail
 - Siapkan secangkir kopi atau teh, apapun yang paling menyenangkan anda, dan baca beberapa [artikel](#articles) yang kami temukan untuk anda
 
 ### Iris starter kits
@@ -189,7 +189,7 @@ Pertama - tama, cara yang paling tepat untuk memulai dengan web framework adalah
 7. [Quickstart for Iris with Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
-> Apakah anda membuat hal yang serupa? [Beritahu kami](https://github.com/kataras/iris/pulls)!
+> Apakah anda membuat hal yang serupa? [Beritahu kami](https://github.com/hidevopsio/iris/pulls)!
 
 ### Middleware
 

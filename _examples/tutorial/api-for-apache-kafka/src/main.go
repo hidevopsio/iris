@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 /*

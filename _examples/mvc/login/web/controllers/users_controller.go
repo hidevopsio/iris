@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"github.com/kataras/iris/_examples/mvc/login/datamodels"
-	"github.com/kataras/iris/_examples/mvc/login/services"
+	"github.com/hidevopsio/iris/_examples/mvc/login/datamodels"
+	"github.com/hidevopsio/iris/_examples/mvc/login/services"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 // UsersController is our /users API controller.
@@ -30,14 +30,16 @@ type UsersController struct {
 // curl -i -u admin:password http://localhost:8080/users
 //
 // The correct way if you have sensitive data:
-// func (c *UsersController) Get() (results []viewmodels.User) {
-// 	data := c.Service.GetAll()
 //
-// 	for _, user := range data {
-// 		results = append(results, viewmodels.User{user})
-// 	}
-// 	return
-// }
+//	func (c *UsersController) Get() (results []viewmodels.User) {
+//		data := c.Service.GetAll()
+//
+//		for _, user := range data {
+//			results = append(results, viewmodels.User{user})
+//		}
+//		return
+//	}
+//
 // otherwise just return the datamodels.
 func (c *UsersController) Get() (results []datamodels.User) {
 	return c.Service.GetAll()

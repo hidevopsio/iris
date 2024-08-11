@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kataras/iris/cache"
+	"github.com/hidevopsio/iris/cache"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/httptest"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/httptest"
 )
 
 func TestNoCache(t *testing.T) {

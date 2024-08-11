@@ -2,7 +2,7 @@
 
 <a href="https://iris-go.com"> <img align="right" width="169px" src="https://iris-go.com/images/icon.svg?v=a" title="logo created by @merry.dii" /> </a>
 
-[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/releases)
+[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)
 
 Iris 是一款超快、简洁高效的 Go 语言 Web开发框架。
 
@@ -10,7 +10,7 @@ Iris 功能强大、使用简单，它将会是你下一个网站、API 服务�
 
 总之，是一款与 express.js 旗鼓相当的 Go 语言框架。
 
-看看[别人是如何评价 Iris](#support)，同时欢迎各位点亮 Iris [Star](https://github.com/kataras/iris/stargazers)，或者关注 [Iris facebook 主页](https://facebook.com/iris.framework)。
+看看[别人是如何评价 Iris](#support)，同时欢迎各位点亮 Iris [Star](https://github.com/hidevopsio/iris/stargazers)，或者关注 [Iris facebook 主页](https://facebook.com/iris.framework)。
 
 ## 支持者
 
@@ -25,7 +25,7 @@ $ cat example.go
 ```go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -84,7 +84,7 @@ _
 请确保安装 [Go Programming Language](https://golang.org/dl/)
 
 ```sh
-$ go get -u github.com/kataras/iris
+$ go get -u github.com/hidevopsio/iris
 ```
 
 Iris 使用 [vendor](https://docs.google.com/document/d/1Bz5-UB7g2uPBdOx-rw5t9MxJwkfpx90cqG9AFL0JAYo) 包依赖管理方式。vendor 包管理的方式可以有效处理包依赖更新问题
@@ -103,7 +103,7 @@ _更新于: [2017年11月21日星期二](_benchmarks/README_UNIX.md)_
 ## 支持
 
 - [更新记录](HISTORY_ZH.md#tu-30-october-2018--v1102) 是您最好的朋友，它包含有关最新功能和更改的信息
-- 你碰巧找到了一个错误？ 请提交 [github issues](https://github.com/kataras/iris/issues)
+- 你碰巧找到了一个错误？ 请提交 [github issues](https://github.com/hidevopsio/iris/issues)
 - 您是否有任何疑问或需要与有经验的人士交谈以实时解决问题？ [加入我们的聊天](https://chat.iris-go.com)
 - [点击这里完成我们基于表单的用户体验报告](https://docs.google.com/forms/d/e/1FAIpQLSdCxZXPANg_xHWil4kVAdhmh7EBBHQZ_4_xSZVDL-oCC_z5pA/viewform?usp=sf_link) 
 - 你喜欢这个框架吗？ Twitter 上关于 Iris 的评价:
@@ -150,14 +150,14 @@ _更新于: [2017年11月21日星期二](_benchmarks/README_UNIX.md)_
 
 [如何贡献代码](CONTRIBUTING.md)
 
-[贡献者列表](https://github.com/kataras/iris/graphs/contributors)
+[贡献者列表](https://github.com/hidevopsio/iris/graphs/contributors)
 
 ## 学习
 
 首先，从 Web 框架开始的最正确的方法是学习 Golang 标准库 [net/http](https://golang.org/pkg/net/http/ "net/http") 的基础知识，如果您的 web 应用程序是一个非常简单的个人项目，没有性能和可维护性要求，您可能只需使用标准库即可。 之后，遵循以下指导原则：
 
 - 浏览 **100+** **[例子](_examples)** 和 我们提供的 [一些入门经验](#iris-starter-kits)
-- 通过 [godocs](https://godoc.org/github.com/kataras/iris) 阅读细节
+- 通过 [godocs](https://godoc.org/github.com/hidevopsio/iris) 阅读细节
 - 准备一杯咖啡或茶，无论你喜欢什么，并阅读我们为你推荐的 [一些文章](#articles)
 
 ### Iris 入门
@@ -184,7 +184,7 @@ _更新于: [2017年11月21日星期二](_benchmarks/README_UNIX.md)_
 7. [Quickstart for Iris with Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
-> 如果你有类似的使用经验吗 [请提交给我们](https://github.com/kataras/iris/pulls)!
+> 如果你有类似的使用经验吗 [请提交给我们](https://github.com/hidevopsio/iris/pulls)!
 
 ### 中间件
 

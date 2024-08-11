@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/kataras/iris/cache/client"
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/cache/client"
+	"github.com/hidevopsio/iris/context"
 )
 
 // CacheControlHeaderValue is the header value of the
@@ -49,10 +49,11 @@ var NoCache = func(ctx context.Context) {
 // Usage: `app.Use(cache.StaticCache(24 * time.Hour))` or `app.Use(cache.Staticcache(-1))`.
 // A middleware, which is a simple Handler can be called inside another handler as well, example:
 // cacheMiddleware := cache.StaticCache(...)
-// func(ctx iris.Context){
-//  cacheMiddleware(ctx)
-//  [...]
-// }
+//
+//	func(ctx iris.Context){
+//	 cacheMiddleware(ctx)
+//	 [...]
+//	}
 var StaticCache = func(cacheDur time.Duration) context.Handler {
 	if int64(cacheDur) <= 0 {
 		return NoCache
@@ -111,7 +112,7 @@ var ETag = func(ctx context.Context) {
 // Cache304 sends a `StatusNotModified` (304) whenever
 // the "If-Modified-Since" request header (time) is before the
 // time.Now() + expiresEvery (always compared to their UTC values).
-// Use this `cache#Cache304` instead of the "github.com/kataras/iris/cache" or iris.Cache
+// Use this `cache#Cache304` instead of the "github.com/hidevopsio/iris/cache" or iris.Cache
 // for better performance.
 // Clients that are compatible with the http RCF (all browsers are and tools like postman)
 // will handle the caching.

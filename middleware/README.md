@@ -3,12 +3,12 @@ Built'n Handlers
 
 | Middleware | Example |
 | -----------|-------------|
-| [basic authentication](basicauth) | [iris/_examples/authentication/basicauth](https://github.com/kataras/iris/tree/master/_examples/authentication/basicauth) |
-| [Google reCAPTCHA](recaptcha) | [iris/_examples/miscellaneous/recaptcha](https://github.com/kataras/iris/tree/master/_examples/miscellaneous/recaptcha) |
-| [localization and internationalization](i18n) | [iris/_examples/miscellaneous/i81n](https://github.com/kataras/iris/tree/master/_examples/miscellaneous/i18n) |
-| [request logger](logger) | [iris/_examples/http_request/request-logger](https://github.com/kataras/iris/tree/master/_examples/http_request/request-logger) |
-| [profiling (pprof)](pprof) | [iris/_examples/miscellaneous/pprof](https://github.com/kataras/iris/tree/master/_examples/miscellaneous/pprof) |
-| [recovery](recover) | [iris/_examples/miscellaneous/recover](https://github.com/kataras/iris/tree/master/_examples/miscellaneous/recover) |
+| [basic authentication](basicauth) | [iris/_examples/authentication/basicauth](https://github.com/hidevopsio/iris/tree/master/_examples/authentication/basicauth) |
+| [Google reCAPTCHA](recaptcha) | [iris/_examples/miscellaneous/recaptcha](https://github.com/hidevopsio/iris/tree/master/_examples/miscellaneous/recaptcha) |
+| [localization and internationalization](i18n) | [iris/_examples/miscellaneous/i81n](https://github.com/hidevopsio/iris/tree/master/_examples/miscellaneous/i18n) |
+| [request logger](logger) | [iris/_examples/http_request/request-logger](https://github.com/hidevopsio/iris/tree/master/_examples/http_request/request-logger) |
+| [profiling (pprof)](pprof) | [iris/_examples/miscellaneous/pprof](https://github.com/hidevopsio/iris/tree/master/_examples/miscellaneous/pprof) |
+| [recovery](recover) | [iris/_examples/miscellaneous/recover](https://github.com/hidevopsio/iris/tree/master/_examples/miscellaneous/recover) |
 
 Experimental Handlers
 ------------
@@ -30,13 +30,13 @@ Most of the experimental handlers are ported to work with _iris_'s handler form,
 Third-Party Handlers
 ------------
 
-iris has its own middleware form of `func(ctx context.Context)` but it's also compatible with all `net/http` middleware forms. See [here](https://github.com/kataras/iris/tree/master/_examples/convert-handlers).
+iris has its own middleware form of `func(ctx context.Context)` but it's also compatible with all `net/http` middleware forms. See [here](https://github.com/hidevopsio/iris/tree/master/_examples/convert-handlers).
 
 Here's a small list of useful third-party handlers:
 
 | Middleware | Description |
 | -----------|-------------|
-| [goth](https://github.com/markbates/goth) | OAuth, OAuth2 authentication. [Example](https://github.com/kataras/iris/tree/master/_examples/authentication/oauth2) |
+| [goth](https://github.com/markbates/goth) | OAuth, OAuth2 authentication. [Example](https://github.com/hidevopsio/iris/tree/master/_examples/authentication/oauth2) |
 | [binding](https://github.com/mholt/binding) | Data binding from HTTP requests into structs |
 | [csp](https://github.com/awakenetworks/csp) | [Content Security Policy](https://www.w3.org/TR/CSP2/) (CSP) support |
 | [delay](https://github.com/jeffbmartinez/delay) | Add delays/latency to endpoints. Useful when testing effects of high latency |

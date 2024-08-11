@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
+	"github.com/hidevopsio/iris/httptest"
 	"github.com/iris-contrib/httpexpect"
-	"github.com/kataras/iris/httptest"
 )
 
 func TestCasbinWrapper(t *testing.T) {

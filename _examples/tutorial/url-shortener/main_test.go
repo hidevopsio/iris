@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kataras/iris/httptest"
+	"github.com/hidevopsio/iris/httptest"
 )
 
 // TestURLShortener tests the simple tasks of our url shortener application.

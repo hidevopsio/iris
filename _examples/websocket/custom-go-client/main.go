@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/websocket"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/websocket"
 
 	xwebsocket "golang.org/x/net/websocket"
 )
@@ -30,7 +30,7 @@ func main() {
 	}
 }
 
-/////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////
 // client side
 func sendUntilErr(sendInterval int) {
 	i := 1
@@ -62,7 +62,7 @@ func recvUntilErr() {
 
 }
 
-//ConnectWebSocket connect a websocket to host
+// ConnectWebSocket connect a websocket to host
 func ConnectWebSocket() error {
 	var origin = "http://localhost/"
 	var url = "ws://localhost:8080/socket"
@@ -87,7 +87,7 @@ func SendMessage(serverID, to, method, message string) error {
 
 // SendtBytes broadcast a message to server
 func SendtBytes(serverID, to, method string, message []byte) error {
-	// look https://github.com/kataras/iris/blob/master/websocket/message.go , client.go and client.js
+	// look https://github.com/hidevopsio/iris/blob/master/websocket/message.go , client.go and client.js
 	// to understand the buffer line:
 	buffer := []byte(fmt.Sprintf("%s%v;0;%v;%v;", websocket.DefaultEvtMessageKey, method, serverID, to))
 	buffer = append(buffer, message...)

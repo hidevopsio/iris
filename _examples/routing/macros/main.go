@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/hero"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/hero"
 )
 
 func main() {

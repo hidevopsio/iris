@@ -3,7 +3,7 @@ package main
 import (
 	"html/template"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 func main() {

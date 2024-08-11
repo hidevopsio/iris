@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kataras/iris/cache/client/rule"
-	"github.com/kataras/iris/cache/entry"
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/cache/client/rule"
+	"github.com/hidevopsio/iris/cache/entry"
+	"github.com/hidevopsio/iris/context"
 )
 
 // Handler the local cache service handler contains
@@ -71,7 +71,7 @@ func parseLifeChanger(ctx context.Context) entry.LifeChanger {
 	}
 }
 
-///TODO: debug this and re-run the parallel tests on larger scale,
+// /TODO: debug this and re-run the parallel tests on larger scale,
 // because I think we have a bug here when `core/router#StaticWeb` is used after this middleware.
 func (h *Handler) ServeHTTP(ctx context.Context) {
 	// check for pre-cache validators, if at least one of them return false

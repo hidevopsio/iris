@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/kataras/iris/_examples/http_responsewriter/quicktemplate/templates"
+	"github.com/hidevopsio/iris/_examples/http_responsewriter/quicktemplate/templates"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 // ExecuteTemplate renders a "tmpl" partial template to the `context#ResponseWriter`.

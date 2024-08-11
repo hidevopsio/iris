@@ -18,13 +18,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/context"
 )
 
 // StaticEmbeddedHandler returns a Handler which can serve embedded files
 // that are embedded using the go-bindata tool(assetsGziped = false) or the kataras/bindata tool (assetsGziped = true).
 //
-// Examples: https://github.com/kataras/iris/tree/master/_examples/file-server
+// Examples: https://github.com/hidevopsio/iris/tree/master/_examples/file-server
 func StaticEmbeddedHandler(vdir string, assetFn func(name string) ([]byte, error), namesFn func() []string, assetsGziped bool) context.Handler {
 	// Depends on the command the user gave to the go-bindata
 	// the assset path (names) may be or may not be prepended with a slash.
@@ -120,7 +120,6 @@ func StaticEmbeddedHandler(vdir string, assetFn func(name string) ([]byte, error
 // Developers can wrap this handler using the `router.StripPrefix`
 // for a fixed static path when the result handler is being, finally, registered to a route.
 //
-//
 // Usage:
 // app := iris.New()
 // ...
@@ -129,7 +128,6 @@ func StaticEmbeddedHandler(vdir string, assetFn func(name string) ([]byte, error
 // /* http://mydomain.com/static/css/style.css */
 // app.Get("/static", h)
 // ...
-//
 func StaticHandler(systemPath string, showList bool, gzip bool) context.Handler {
 	return NewStaticHandlerBuilder(systemPath).
 		Gzip(gzip).

@@ -3,12 +3,12 @@
 package controllers
 
 import (
-	"github.com/kataras/iris/_examples/mvc/login/datamodels"
-	"github.com/kataras/iris/_examples/mvc/login/services"
+	"github.com/hidevopsio/iris/_examples/mvc/login/datamodels"
+	"github.com/hidevopsio/iris/_examples/mvc/login/services"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 // UserController is our /user controller.

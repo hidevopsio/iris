@@ -10,7 +10,7 @@
 
 * OS: Microsoft **Windows 10** [Version 1803 (OS Build 17134.345)]
 * HTTP Benchmark Tool: https://github.com/codesenberg/bombardier, latest version **1.2.0**
-* **Iris [Go]**: https://github.com/kataras/iris, latest version **11.0.0** built with [go1.11.1](https://golang.org)
+* **Iris [Go]**: https://github.com/hidevopsio/iris, latest version **11.0.0** built with [go1.11.1](https://golang.org)
 * **.NET Core (both Kestrel & MVC) [C#]**: https://www.microsoft.com/net/core, latest version **2.1.5**
 * **Node.js (express + throng) [Javascript]**: https://nodejs.org/, latest version **10.12.0**, express: https://github.com/expressjs/express latest version **4.16.4** and [throng](https://www.npmjs.com/package/throng) latest version **4.0.0**
 

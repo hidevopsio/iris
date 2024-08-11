@@ -3,7 +3,7 @@ package main
 import (
 	"gopkg.in/yaml.v2"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 func main() {

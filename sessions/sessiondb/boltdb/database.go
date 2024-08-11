@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/kataras/iris/core/errors"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris/core/errors"
+	"github.com/hidevopsio/iris/sessions"
 
 	bolt "github.com/etcd-io/bbolt"
 	"github.com/kataras/golog"

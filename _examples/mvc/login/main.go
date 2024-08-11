@@ -5,15 +5,15 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris/_examples/mvc/login/datasource"
-	"github.com/kataras/iris/_examples/mvc/login/repositories"
-	"github.com/kataras/iris/_examples/mvc/login/services"
-	"github.com/kataras/iris/_examples/mvc/login/web/controllers"
-	"github.com/kataras/iris/_examples/mvc/login/web/middleware"
+	"github.com/hidevopsio/iris/_examples/mvc/login/datasource"
+	"github.com/hidevopsio/iris/_examples/mvc/login/repositories"
+	"github.com/hidevopsio/iris/_examples/mvc/login/services"
+	"github.com/hidevopsio/iris/_examples/mvc/login/web/controllers"
+	"github.com/hidevopsio/iris/_examples/mvc/login/web/middleware"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 func main() {

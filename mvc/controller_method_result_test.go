@@ -4,11 +4,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/httptest"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/httptest"
 
-	. "github.com/kataras/iris/mvc"
+	. "github.com/hidevopsio/iris/mvc"
 )
 
 type testControllerMethodResult struct {

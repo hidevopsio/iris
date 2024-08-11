@@ -1,6 +1,8 @@
-module github.com/kataras/iris
+module github.com/hidevopsio/iris
 
-go 1.19
+go 1.21
+
+toolchain go1.22.5
 
 require (
 	github.com/BurntSushi/toml v0.3.1

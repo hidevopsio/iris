@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 
-	"github.com/kataras/iris/cache"
+	"github.com/hidevopsio/iris/cache"
 )
 
 var markdownContents = []byte(`## Hello Markdown
@@ -52,7 +52,7 @@ All features of Sundown are supported, including:
 *   **Standards compliant**. Output successfully validates using the
     W3C validation tool for HTML 4.01 and XHTML 1.0 Transitional.
 
-	[this is a link](https://github.com/kataras/iris) `)
+	[this is a link](https://github.com/hidevopsio/iris) `)
 
 // Cache should not be used on handlers that contain dynamic data.
 // Cache is a good and a must-feature on static content, i.e "about page" or for a whole blog site.
@@ -77,4 +77,4 @@ func writeMarkdown(ctx iris.Context) {
 /* Note that `StaticWeb` does use the browser's disk caching by-default
 therefore, register the cache handler AFTER any StaticWeb calls,
 for a faster solution that server doesn't need to keep track of the response
-navigate to https://github.com/kataras/iris/blob/master/_examples/cache/client-side/main.go */
+navigate to https://github.com/hidevopsio/iris/blob/master/_examples/cache/client-side/main.go */

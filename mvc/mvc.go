@@ -1,10 +1,10 @@
 package mvc
 
 import (
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/router"
-	"github.com/kataras/iris/hero"
-	"github.com/kataras/iris/hero/di"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/router"
+	"github.com/hidevopsio/iris/hero"
+	"github.com/hidevopsio/iris/hero/di"
 )
 
 var (
@@ -63,7 +63,8 @@ func New(party router.Party) *Application {
 // this function simply calls the `New(party)` and its `.Configure(configurators...)`.
 //
 // A call of `mvc.New(app.Party("/path").Configure(buildMyMVC)` is equal to
-//           	 `mvc.Configure(app.Party("/path"), buildMyMVC)`.
+//
+//	`mvc.Configure(app.Party("/path"), buildMyMVC)`.
 //
 // Read more at `New() Application` and `Application#Configure` methods.
 func Configure(party router.Party, configurators ...func(*Application)) *Application {
@@ -152,7 +153,7 @@ func (app *Application) Register(values ...interface{}) *Application {
 // Result or (Result, error)
 // where Get is an HTTP Method func.
 //
-// Examples at: https://github.com/kataras/iris/tree/master/_examples/mvc
+// Examples at: https://github.com/hidevopsio/iris/tree/master/_examples/mvc
 func (app *Application) Handle(controller interface{}) *Application {
 	// initialize the controller's activator, nothing too magical so far.
 	c := newControllerActivator(app.Router, controller, app.Dependencies)

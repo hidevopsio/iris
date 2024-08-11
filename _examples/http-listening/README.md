@@ -41,7 +41,7 @@ import (
     "os"
     "net"
 
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -85,7 +85,7 @@ import (
     //   - TCP_FASTOPEN. See https://lwn.net/Articles/508865/ for details.
     "github.com/valyala/tcplisten"
 
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 // go get github.com/valyala/tcplisten
@@ -227,7 +227,7 @@ import (
     "context"
     "time"
 
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 

@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 const sessionIDKey = "UserID"

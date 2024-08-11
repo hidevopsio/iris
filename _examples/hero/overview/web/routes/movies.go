@@ -5,10 +5,10 @@ package routes
 import (
 	"errors"
 
-	"github.com/kataras/iris/_examples/hero/overview/datamodels"
-	"github.com/kataras/iris/_examples/hero/overview/services"
+	"github.com/hidevopsio/iris/_examples/hero/overview/datamodels"
+	"github.com/hidevopsio/iris/_examples/hero/overview/services"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 // Movies returns list of the movies.

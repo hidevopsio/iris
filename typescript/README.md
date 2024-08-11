@@ -1,6 +1,6 @@
 # Typescript
 
-[Typescript](http://www.typescriptlang.org/) and [alm-tools cloud editor](http://alm.tools/) automation tools for the [iris](https://github.com/kataras/iris) web framework.
+[Typescript](http://www.typescriptlang.org/) and [alm-tools cloud editor](http://alm.tools/) automation tools for the [iris](https://github.com/hidevopsio/iris) web framework.
 
 
 ## Table of contents

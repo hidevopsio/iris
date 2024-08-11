@@ -1,8 +1,9 @@
+//go:build go1.9
 // +build go1.9
 
 package mvc
 
-import "github.com/kataras/iris/hero"
+import "github.com/hidevopsio/iris/hero"
 
 type (
 

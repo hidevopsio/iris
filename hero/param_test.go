@@ -3,7 +3,7 @@ package hero
 import (
 	"testing"
 
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/context"
 )
 
 func TestPathParams(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 	"github.com/BurntSushi/toml"
 	"gopkg.in/yaml.v2"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
 )
 
 const globalConfigurationKeyword = "~"
@@ -108,7 +108,6 @@ func YAML(filename string) Configuration {
 // Read more about toml's implementation at:
 // https://github.com/toml-lang/toml
 //
-//
 // Accepts the absolute path of the configuration file.
 // An error will be shown to the user via panic with the error message.
 // Error may occur when the file doesn't exists or is not formatted correctly.
@@ -190,7 +189,7 @@ var WithGlobalConfiguration = func(app *Application) {
 //
 // See `Configuration#IgnoreServerErrors []string` too.
 //
-// Example: https://github.com/kataras/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
+// Example: https://github.com/hidevopsio/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
 func WithoutServerError(errors ...error) Configurator {
 	return func(app *Application) {
 		if len(errors) == 0 {
@@ -321,7 +320,6 @@ func WithRemoteAddrHeader(headerName string) Configurator {
 // WithoutRemoteAddrHeader disables an existing request header name
 // that can be used to validate and parse the client's real IP.
 //
-//
 // Keep note that RemoteAddrHeaders is already defaults to an empty map
 // so you don't have to call this Configurator if you didn't
 // add allowed headers via configuration or via `WithRemoteAddrHeader` before.
@@ -364,7 +362,7 @@ type Configuration struct {
 	//
 	// See `WithoutServerError(...)` function too.
 	//
-	// Example: https://github.com/kataras/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
+	// Example: https://github.com/hidevopsio/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
 	//
 	// Defaults to an empty slice.
 	IgnoreServerErrors []string `json:"ignoreServerErrors,omitempty" yaml:"IgnoreServerErrors" toml:"IgnoreServerErrors"`
@@ -389,7 +387,7 @@ type Configuration struct {
 	DisablePathCorrection bool `json:"disablePathCorrection,omitempty" yaml:"DisablePathCorrection" toml:"DisablePathCorrection"`
 
 	// EnablePathEscape when is true then its escapes the path, the named parameters (if any).
-	// Change to false it if you want something like this https://github.com/kataras/iris/issues/135 to work
+	// Change to false it if you want something like this https://github.com/hidevopsio/iris/issues/135 to work
 	//
 	// When do you need to Disable(false) it:
 	// accepts parameters with slash '/'
@@ -458,7 +456,7 @@ type Configuration struct {
 	// Context values' keys for various features.
 	//
 	// TranslateLanguageContextKey & TranslateFunctionContextKey are used by i18n handlers/middleware
-	// currently we have only one: https://github.com/kataras/iris/tree/master/middleware/i18n.
+	// currently we have only one: https://github.com/hidevopsio/iris/tree/master/middleware/i18n.
 	//
 	// Defaults to "iris.translate" and "iris.language"
 	TranslateFunctionContextKey string `json:"translateFunctionContextKey,omitempty" yaml:"TranslateFunctionContextKey" toml:"TranslateFunctionContextKey"`
@@ -624,11 +622,12 @@ func (c Configuration) GetViewDataContextKey() string {
 // that the client may sent.
 //
 // Defaults to an empty map but an example usage is:
-// RemoteAddrHeaders {
-//	"X-Real-Ip":             true,
-//  "X-Forwarded-For":       true,
-// 	"CF-Connecting-IP": 	 true,
-//	}
+//
+//	RemoteAddrHeaders {
+//		"X-Real-Ip":             true,
+//	 "X-Forwarded-For":       true,
+//		"CF-Connecting-IP": 	 true,
+//		}
 //
 // Look `context.RemoteAddr()` for more.
 func (c Configuration) GetRemoteAddrHeaders() map[string]bool {

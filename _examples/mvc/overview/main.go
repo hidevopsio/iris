@@ -3,14 +3,14 @@
 package main
 
 import (
-	"github.com/kataras/iris/_examples/mvc/overview/datasource"
-	"github.com/kataras/iris/_examples/mvc/overview/repositories"
-	"github.com/kataras/iris/_examples/mvc/overview/services"
-	"github.com/kataras/iris/_examples/mvc/overview/web/controllers"
-	"github.com/kataras/iris/_examples/mvc/overview/web/middleware"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/datasource"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/repositories"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/services"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/web/controllers"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/web/middleware"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
 )
 
 func main() {

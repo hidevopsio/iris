@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
-	"github.com/kataras/iris/macro"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
+	"github.com/hidevopsio/iris/macro"
 )
 
 // MethodNone is a Virtual method
@@ -157,11 +157,12 @@ func (api *APIBuilder) AllowMethods(methods ...string) Party {
 // For example, if for some reason the desired result is the (done or all) handlers to be executed no matter what
 // even if no `ctx.Next()` is called in the previous handlers, including the begin(`Use`),
 // the main(`Handle`) and the done(`Done`) handlers themselves, then:
-// Party#SetExecutionRules(iris.ExecutionRules {
-//   Begin: iris.ExecutionOptions{Force: true},
-//   Main:  iris.ExecutionOptions{Force: true},
-//   Done:  iris.ExecutionOptions{Force: true},
-// })
+//
+//	Party#SetExecutionRules(iris.ExecutionRules {
+//	  Begin: iris.ExecutionOptions{Force: true},
+//	  Main:  iris.ExecutionOptions{Force: true},
+//	  Done:  iris.ExecutionOptions{Force: true},
+//	})
 //
 // Note that if : true then the only remained way to "break" the handler chain is by `ctx.StopExecution()` now that `ctx.Next()` does not matter.
 //
@@ -174,7 +175,7 @@ func (api *APIBuilder) AllowMethods(methods ...string) Party {
 //
 // Returns this Party.
 //
-// Example: https://github.com/kataras/iris/tree/master/_examples/mvc/middleware/without-ctx-next
+// Example: https://github.com/hidevopsio/iris/tree/master/_examples/mvc/middleware/without-ctx-next
 func (api *APIBuilder) SetExecutionRules(executionRules ExecutionRules) Party {
 	api.handlerExecutionRules = executionRules
 	return api
@@ -268,11 +269,14 @@ func (api *APIBuilder) Handle(method string, relativePath string, handlers ...co
 // otherwise use `Party` which can handle many paths with different handlers and middlewares.
 //
 // Usage:
-// 	app.HandleMany("GET", "/user /user/{id:uint64} /user/me", genericUserHandler)
+//
+//	app.HandleMany("GET", "/user /user/{id:uint64} /user/me", genericUserHandler)
+//
 // At the other side, with `Handle` we've had to write:
-// 	app.Handle("GET", "/user", userHandler)
-// 	app.Handle("GET", "/user/{id:uint64}", userByIDHandler)
-// 	app.Handle("GET", "/user/me", userMeHandler)
+//
+//	app.Handle("GET", "/user", userHandler)
+//	app.Handle("GET", "/user/{id:uint64}", userByIDHandler)
+//	app.Handle("GET", "/user/me", userMeHandler)
 //
 // This method is used behind the scenes at the `Controller` function
 // in order to handle more than one paths for the same controller instance.
@@ -360,12 +364,13 @@ func (api *APIBuilder) Party(relativePath string, handlers ...context.Handler) P
 // Note: `iris#Party` and `core/router#Party` describes the exactly same interface.
 //
 // Usage:
-// app.PartyFunc("/users", func(u iris.Party){
-//	u.Use(authMiddleware, logMiddleware)
-//	u.Get("/", getAllUsers)
-//	u.Post("/", createOrUpdateUser)
-//	u.Delete("/", deleteUser)
-// })
+//
+//	app.PartyFunc("/users", func(u iris.Party){
+//		u.Use(authMiddleware, logMiddleware)
+//		u.Get("/", getAllUsers)
+//		u.Post("/", createOrUpdateUser)
+//		u.Delete("/", deleteUser)
+//	})
 //
 // Look `Party` for more.
 func (api *APIBuilder) PartyFunc(relativePath string, partyBuilderFunc func(p Party)) Party {
@@ -412,7 +417,7 @@ func (api *APIBuilder) WildcardSubdomain(middleware ...context.Handler) Party {
 // Macros returns the macro collection that is responsible
 // to register custom macros with their own parameter types and their macro functions for all routes.
 //
-// Learn more at:  https://github.com/kataras/iris/tree/master/_examples/routing/dynamic-path
+// Learn more at:  https://github.com/hidevopsio/iris/tree/master/_examples/routing/dynamic-path
 func (api *APIBuilder) Macros() *macro.Macros {
 	return api.macros
 }
@@ -625,7 +630,7 @@ func (api *APIBuilder) registerResourceRoute(reqPath string, h context.Handler) 
 //
 // Note:
 // The only difference from package-level `StaticHandler`
-// is that this `StaticHandler`` receives a request path which
+// is that this `StaticHandler“ receives a request path which
 // is appended to the party's relative path and stripped here.
 //
 // Usage:
@@ -636,7 +641,6 @@ func (api *APIBuilder) registerResourceRoute(reqPath string, h context.Handler) 
 // /* http://mysubdomain.mydomain.com/static/css/style.css */
 // mySubdomainFsServer.Get("/static", h)
 // ...
-//
 func (api *APIBuilder) StaticHandler(systemPath string, showList bool, gzip bool) context.Handler {
 	// Note: this doesn't need to be here but we'll keep it for consistently
 	return StaticHandler(systemPath, showList, gzip)
@@ -684,7 +688,7 @@ func (api *APIBuilder) StaticContent(reqPath string, cType string, content []byt
 //
 // Returns the GET *Route.
 //
-// Example: https://github.com/kataras/iris/tree/master/_examples/file-server/embedding-files-into-app
+// Example: https://github.com/hidevopsio/iris/tree/master/_examples/file-server/embedding-files-into-app
 func (api *APIBuilder) StaticEmbedded(requestPath string, vdir string, assetFn func(name string) ([]byte, error), namesFn func() []string) *Route {
 	return api.staticEmbedded(requestPath, vdir, assetFn, namesFn, false)
 }
@@ -700,7 +704,7 @@ func (api *APIBuilder) StaticEmbedded(requestPath string, vdir string, assetFn f
 // Third parameter is the GzipAsset function
 // Forth parameter is the GzipAssetNames function.
 //
-// Example: https://github.com/kataras/iris/tree/master/_examples/file-server/embedding-gziped-files-into-app
+// Example: https://github.com/hidevopsio/iris/tree/master/_examples/file-server/embedding-gziped-files-into-app
 func (api *APIBuilder) StaticEmbeddedGzip(requestPath string, vdir string, gzipAssetFn func(name string) ([]byte, error), gzipNamesFn func() []string) *Route {
 	return api.staticEmbedded(requestPath, vdir, gzipAssetFn, gzipNamesFn, true)
 }
@@ -794,7 +798,7 @@ func (api *APIBuilder) Favicon(favPath string, requestPath ...string) *Route {
 //
 // for more options look router.StaticHandler.
 //
-//     api.StaticWeb("/static", "./static")
+//	api.StaticWeb("/static", "./static")
 //
 // As a special case, the returned file server redirects any request
 // ending in "/index.html" to the same path, without the final
@@ -872,11 +876,12 @@ func (api *APIBuilder) FireErrorCode(ctx context.Context) {
 // app := iris.New()
 // app.RegisterView(iris.$VIEW_ENGINE("./views", ".$extension"))
 // my := app.Party("/my").Layout("layouts/mylayout.html")
-// 	my.Get("/", func(ctx iris.Context) {
-// 		ctx.View("page1.html")
-// 	})
 //
-// Examples: https://github.com/kataras/iris/tree/master/_examples/view
+//	my.Get("/", func(ctx iris.Context) {
+//		ctx.View("page1.html")
+//	})
+//
+// Examples: https://github.com/hidevopsio/iris/tree/master/_examples/view
 func (api *APIBuilder) Layout(tmplLayoutFile string) Party {
 	api.Use(func(ctx context.Context) {
 		ctx.ViewLayout(tmplLayoutFile)

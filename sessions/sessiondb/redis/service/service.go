@@ -2,9 +2,9 @@ package service
 
 import (
 	"fmt"
-	"time"
 	"github.com/gomodule/redigo/redis"
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris/core/errors"
+	"time"
 )
 
 var (
@@ -62,7 +62,7 @@ func (r *Service) Set(key string, value interface{}, secondsLifetime int64) (err
 }
 
 // Get returns value, err by its key
-//returns nil and a filled error if something bad happened.
+// returns nil and a filled error if something bad happened.
 func (r *Service) Get(key string) (interface{}, error) {
 	c := r.pool.Get()
 	defer c.Close()
@@ -94,7 +94,7 @@ func (r *Service) TTL(key string) (seconds int64, hasExpiration bool, found bool
 	// if -1 means the key has unlimited life time.
 	hasExpiration = seconds > -1
 	// if -2 means key does not exist.
-	found = ! (c.Err() != nil || seconds == -2)
+	found = !(c.Err() != nil || seconds == -2)
 	return
 }
 
@@ -226,7 +226,7 @@ func (r *Service) GetKeys(prefix string) ([]string, error) {
 
 // GetBytes returns value, err by its key
 // you can use utils.Deserialize((.GetBytes("yourkey"),&theobject{})
-//returns nil and a filled error if something wrong happens
+// returns nil and a filled error if something wrong happens
 func (r *Service) GetBytes(key string) ([]byte, error) {
 	c := r.pool.Get()
 	defer c.Close()

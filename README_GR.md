@@ -2,7 +2,7 @@
 
 <a href="https://iris-go.com"> <img align="right" width="169px" src="https://iris-go.com/images/icon.svg?v=a" title="logo created by @merry.dii" /> </a>
 
-[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/kataras/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/kataras/iris/releases)
+[![build status](https://img.shields.io/travis/kataras/iris/master.svg?style=flat-square)](https://travis-ci.org/kataras/iris)<!-- [![release](https://img.shields.io/github/release/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)--> [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=flat-square)](http://goreportcard.com/report/kataras/iris) [![vscode-iris](https://img.shields.io/badge/ext%20-vscode-0c77e3.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=kataras2006.iris)<!--[![github closed issues](https://img.shields.io/github/issues-closed-raw/kataras/iris.svg?style=flat-square)](https://github.com/hidevopsio/iris/issues?q=is%3Aissue+is%3Aclosed)--> [![chat](https://img.shields.io/badge/community-%20chat-00BCD4.svg?style=flat-square)](https://kataras.rocket.chat/channel/iris) [![view examples](https://img.shields.io/badge/learn%20by-examples-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/tree/master/_examples/routing) [![release](https://img.shields.io/badge/release%20-v11.0-0077b3.svg?style=flat-square)](https://github.com/hidevopsio/iris/releases)
 
 Το Iris είναι ένα γρήγορο, απλό αλλά και πλήρως λειτουργικό και πολύ αποδοτικό web framework για τη Go.
 
@@ -10,7 +10,7 @@
 
 Επιτέλους, ένα πραγματικά ισάξιο (και με το παραπάνω) expressjs web framework για τη γλώσσα προγραμματισμού Go.
 
-Μάθετε τι [λένε οι άλλοι για το Iris](#%CE%A5%CF%80%CE%BF%CF%83%CF%84%CE%AE%CF%81%CE%B9%CE%BE%CE%B7) και [δώστε ένα αστέρι](https://github.com/kataras/iris/stargazers) στο github repository για να μένετε [πάντα ενημερωμένοι](https://facebook.com/iris.framework).
+Μάθετε τι [λένε οι άλλοι για το Iris](#%CE%A5%CF%80%CE%BF%CF%83%CF%84%CE%AE%CF%81%CE%B9%CE%BE%CE%B7) και [δώστε ένα αστέρι](https://github.com/hidevopsio/iris/stargazers) στο github repository για να μένετε [πάντα ενημερωμένοι](https://facebook.com/iris.framework).
 
 ## Yποστηρικτές
 
@@ -25,7 +25,7 @@ $ cat example.go
 ```go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -90,7 +90,7 @@ _
 Η μόνη απαίτηση είναι η [Go Γλώσσα Προγραμματισμού](https://golang.org/dl/)
 
 ```sh
-$ go get -u github.com/kataras/iris
+$ go get -u github.com/hidevopsio/iris
 ```
 
 Το Iris εκμεταλλεύεται τη λεγόμενη λειτουργία [vendor directory](https://docs.google.com/document/d/1Bz5-UB7g2uPBdOx-rw5t9MxJwkfpx90cqG9AFL0JAYo). Παίρνετε πλήρως αναπαραγωγίσιμα builds, καθώς αυτή η μέθοδος προστατεύει από τις upstream μετονομασίες και διαγραφές.
@@ -109,7 +109,7 @@ _Η τελευταία ενημέρωση έγινε την [Τρίτη, 21 Νο
 ## Υποστήριξη
 
 - To [HISTORY](HISTORY_GR.md#tu-30-october-2018--v1102) αρχείο είναι ο καλύτερος σας φίλος, περιέχει πληροφορίες σχετικά με τις τελευταίες λειτουργίες(features) και αλλαγές
-- Μήπως τυχαίνει να βρήκατε κάποιο bug; Δημοσιεύστε το στα [github issues](https://github.com/kataras/iris/issues)
+- Μήπως τυχαίνει να βρήκατε κάποιο bug; Δημοσιεύστε το στα [github issues](https://github.com/hidevopsio/iris/issues)
 - Έχετε οποιεσδήποτε ερωτήσεις ή πρέπει να μιλήσετε με κάποιον έμπειρο για την επίλυση ενός προβλήματος σε πραγματικό χρόνο; Ελάτε μαζί μας στην [συνομιλία κοινότητας](https://chat.iris-go.com)
 - Συμπληρώστε την αναφορά εμπειρίας χρήστη κάνοντας κλικ [εδώ](https://docs.google.com/forms/d/e/1FAIpQLSdCxZXPANg_xHWil4kVAdhmh7EBBHQZ_4_xSZVDL-oCC_z5pA/viewform?usp=sf_link)
 - Σας αρέσει το Iris; Τιτιβίστε κάτι για αυτό! Άνθρωποι από ολόκληρο τον πλανήτη έχουνε μιλήσει για αυτό ακριβώς:
@@ -157,14 +157,14 @@ _Η τελευταία ενημέρωση έγινε την [Τρίτη, 21 Νο
 
 Για περισσότερες πληροφορίες σχετικά με τη συμβολή στο Iris, διαβάστε το [CONTRIBUTING.md](CONTRIBUTING.md) αρχείο.
 
-[Κατάλογος όλων των Συνεργατών](https://github.com/kataras/iris/graphs/contributors)
+[Κατάλογος όλων των Συνεργατών](https://github.com/hidevopsio/iris/graphs/contributors)
 
 ## Μάθηση
 
 Πρώτα απ 'όλα, ο πιο σωστός τρόπος για να ξεκινήσετε με ένα web framework είναι να μάθετε τα βασικά της γλώσσας προγραμματισμού και των τυπικών της δυνατοτήτων `http`, αν η εφαρμογή σας είναι ένα πολύ απλό προσωπικό έργο χωρίς απαιτήσεις επιδόσεων και συντηρησιμότητας, ίσως να θέλετε να προχωρήσετε μόνο με τα τυπικά πακέτα, εαν οχι τότε ακολουθήστε τις παρακάτω οδηγίες:
 
 - Πλοηγηθείτε μέσω των **100+1** **[παραδειγμάτων](_examples)** και μερικές [απλές εφαρμογές για αρχάριους](#iris-starter-kits) που δημιουργήσαμε για εσάς
-- Διαβάστε τα [godocs](https://godoc.org/github.com/kataras/iris) για οποιαδήποτε λεπτομέρεια
+- Διαβάστε τα [godocs](https://godoc.org/github.com/hidevopsio/iris) για οποιαδήποτε λεπτομέρεια
 - Ετοιμάστε ένα φλιτζάνι καφέ ή τσάι, ό,τι σας ευχαριστεί περισσότερο και διαβάστε κάποια [άρθρα](#articles) που βρήκαμε για εσάς
 
 ### Iris starter kits
@@ -191,7 +191,7 @@ _Η τελευταία ενημέρωση έγινε την [Τρίτη, 21 Νο
 7. [Quickstart for Iris with Nanobox](https://guides.nanobox.io/golang/iris/from-scratch)
 8. [A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS](https://hasura.io/hub/project/hasura/hello-golang-iris)
 
-> Έχετε χτίσει κάτι παρόμοιο; [Ενημέρωσέ μας](https://github.com/kataras/iris/pulls)!
+> Έχετε χτίσει κάτι παρόμοιο; [Ενημέρωσέ μας](https://github.com/hidevopsio/iris/pulls)!
 
 ### Middleware
 

@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 type businessModel struct {

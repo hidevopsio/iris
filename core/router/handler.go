@@ -8,9 +8,9 @@ import (
 
 	"github.com/kataras/golog"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
-	"github.com/kataras/iris/core/netutil"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
+	"github.com/hidevopsio/iris/core/netutil"
 )
 
 // RequestHandler the middle man between acquiring a context and releasing it.
@@ -155,7 +155,7 @@ func (h *routerHandler) HandleRequest(ctx context.Context) {
 			r.URL.Path = path
 			url := r.URL.String()
 
-			// Fixes https://github.com/kataras/iris/issues/921
+			// Fixes https://github.com/hidevopsio/iris/issues/921
 			// This is caused for security reasons, imagine a payment shop,
 			// you can't just permantly redirect a POST request, so just 307 (RFC 7231, 6.4.7).
 			if method == http.MethodPost || method == http.MethodPut {

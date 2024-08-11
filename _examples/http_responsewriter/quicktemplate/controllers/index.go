@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/kataras/iris/_examples/http_responsewriter/quicktemplate/templates"
+	"github.com/hidevopsio/iris/_examples/http_responsewriter/quicktemplate/templates"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 // Index renders our ../templates/index.qtpl file using the compiled ../templates/index.qtpl.go file.

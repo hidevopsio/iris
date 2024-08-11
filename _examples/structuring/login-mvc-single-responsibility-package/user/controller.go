@@ -1,8 +1,8 @@
 package user
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
 )
 
 var (

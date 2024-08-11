@@ -5,7 +5,7 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 
 	"github.com/go-xorm/xorm"
 	_ "github.com/mattn/go-sqlite3"

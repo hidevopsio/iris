@@ -6,16 +6,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kataras/iris/cache"
-	"github.com/kataras/iris/cache/client"
-	"github.com/kataras/iris/cache/client/rule"
+	"github.com/hidevopsio/iris/cache"
+	"github.com/hidevopsio/iris/cache/client"
+	"github.com/hidevopsio/iris/cache/client/rule"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
 
+	"github.com/hidevopsio/iris/httptest"
 	"github.com/iris-contrib/httpexpect"
-	"github.com/kataras/iris/httptest"
 )
 
 var (

@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kataras/iris/cache/cfg"
-	"github.com/kataras/iris/cache/client/rule"
-	"github.com/kataras/iris/cache/uri"
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/cache/cfg"
+	"github.com/hidevopsio/iris/cache/client/rule"
+	"github.com/hidevopsio/iris/cache/uri"
+	"github.com/hidevopsio/iris/context"
 )
 
 // ClientHandler is the client-side handler
@@ -17,8 +17,8 @@ import (
 // register one client handler per route.
 //
 // it's just calls a remote cache service server/handler,
-//  which lives on other, external machine.
 //
+//	which lives on other, external machine.
 type ClientHandler struct {
 	// bodyHandler the original route's handler
 	bodyHandler context.Handler

@@ -3,11 +3,11 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user"
+	"github.com/hidevopsio/iris/_examples/structuring/login-mvc-single-responsibility-package/user"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 func main() {

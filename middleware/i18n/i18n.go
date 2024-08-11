@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/hidevopsio/iris/context"
 	"github.com/iris-contrib/i18n"
-	"github.com/kataras/iris/context"
 )
 
 // test file: ../../_examples/miscellaneous/i18n/main_test.go

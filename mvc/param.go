@@ -3,8 +3,8 @@ package mvc
 import (
 	"reflect"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/macro"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/macro"
 )
 
 func getPathParamsForInput(params []macro.TemplateParam, funcIn ...reflect.Type) (values []reflect.Value) {

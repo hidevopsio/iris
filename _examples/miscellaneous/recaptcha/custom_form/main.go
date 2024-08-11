@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 
-	"github.com/kataras/iris/middleware/recaptcha"
+	"github.com/hidevopsio/iris/middleware/recaptcha"
 )
 
 // keys should be obtained by https://www.google.com/recaptcha

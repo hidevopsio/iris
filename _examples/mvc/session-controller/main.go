@@ -1,3 +1,4 @@
+//go:build go1.9
 // +build go1.9
 
 package main
@@ -6,9 +7,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
+	"github.com/hidevopsio/iris/sessions"
 )
 
 // VisitController handles the root route.

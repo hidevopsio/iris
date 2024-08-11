@@ -3,9 +3,9 @@ package macro
 import (
 	"reflect"
 
-	"github.com/kataras/iris/core/memstore"
-	"github.com/kataras/iris/macro/interpreter/ast"
-	"github.com/kataras/iris/macro/interpreter/parser"
+	"github.com/hidevopsio/iris/core/memstore"
+	"github.com/hidevopsio/iris/macro/interpreter/ast"
+	"github.com/hidevopsio/iris/macro/interpreter/parser"
 )
 
 // Template contains a route's path full parsed template.

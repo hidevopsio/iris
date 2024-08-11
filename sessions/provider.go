@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris/core/errors"
 )
 
 type (

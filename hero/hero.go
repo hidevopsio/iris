@@ -1,10 +1,10 @@
 package hero
 
 import (
-	"github.com/kataras/iris/hero/di"
+	"github.com/hidevopsio/iris/hero/di"
 
+	"github.com/hidevopsio/iris/context"
 	"github.com/kataras/golog"
-	"github.com/kataras/iris/context"
 )
 
 // def is the default herp value which can be used for dependencies share.

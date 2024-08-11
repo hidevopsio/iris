@@ -1,15 +1,15 @@
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
 
-	"github.com/kataras/iris/middleware/logger"
-	"github.com/kataras/iris/middleware/recover"
+	"github.com/hidevopsio/iris/middleware/logger"
+	"github.com/hidevopsio/iris/middleware/recover"
 )
 
 // This example is equivalent to the
-// https://github.com/kataras/iris/blob/master/_examples/hello-world/main.go
+// https://github.com/hidevopsio/iris/blob/master/_examples/hello-world/main.go
 //
 // It seems that additional code you
 // have to write doesn't worth it

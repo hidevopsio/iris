@@ -2,7 +2,7 @@
 
 [WebSocket](https://wikipedia.org/wiki/WebSocket) is a protocol that enables two-way persistent communication channels over TCP connections. It is used for applications such as chat, stock tickers, games, anywhere you want real-time functionality in a web application.
 
-[View or download sample code](https://github.com/kataras/iris/tree/master/_examples/websocket).
+[View or download sample code](https://github.com/hidevopsio/iris/tree/master/_examples/websocket).
 
 ## When to use it
 
@@ -10,7 +10,7 @@ Use WebSockets when you need to work directly with a socket connection. For exam
 
 ## How to use it
 
-* import the `"github.com/kataras/iris/websocket"`
+* import the `"github.com/hidevopsio/iris/websocket"`
 * Configure the websocket package.
 * Accept WebSocket requests.
 * Send and receive messages.
@@ -18,13 +18,13 @@ Use WebSockets when you need to work directly with a socket connection. For exam
 ### Import the websocket package
 
 ```go
-import "github.com/kataras/iris/websocket"
+import "github.com/hidevopsio/iris/websocket"
 ```
 
 ### Configure the websocket package
 
 ```go
-import "github.com/kataras/iris/websocket"
+import "github.com/hidevopsio/iris/websocket"
 
 func main() {
     ws := websocket.New(websocket.Config{
@@ -98,8 +98,8 @@ type Config struct {
 
 ```go
 import (
-    "github.com/kataras/iris"
-    "github.com/kataras/iris/websocket"
+    "github.com/hidevopsio/iris"
+    "github.com/hidevopsio/iris/websocket"
 )
 
 func main() {

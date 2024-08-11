@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kataras/iris/httptest"
+	"github.com/hidevopsio/iris/httptest"
 	"github.com/klauspost/compress/gzip"
 )
 

@@ -15,7 +15,7 @@ which completes this can be passed at `Application#Configure` and/or `Applicatio
 package main
 
 import (
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 package main
 
 import (
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -87,7 +87,7 @@ Charset = "UTF-8"
 package main
 
 import (
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -119,7 +119,7 @@ Charset: UTF-8
 package main
 
 import (
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -146,7 +146,7 @@ func main() {
 //
 // See `Configuration#IgnoreServerErrors []string` too.
 //
-// Example: https://github.com/kataras/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
+// Example: https://github.com/hidevopsio/iris/tree/master/_examples/http-listening/listen-addr/omit-server-errors
 func WithoutServerError(errors ...error) Configurator
 
 // WithoutStartupLog turns off the information send, once, to the terminal when the main server is open.
@@ -237,8 +237,8 @@ package counter
 import (
     "time"
 
-    "github.com/kataras/iris"
-    "github.com/kataras/iris/core/host"
+    "github.com/hidevopsio/iris"
+    "github.com/hidevopsio/iris/core/host"
 )
 
 func Configurator(app *iris.Application) {
@@ -271,7 +271,7 @@ package main
 import (
     "counter"
 
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 )
 
 func main() {

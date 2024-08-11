@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 	//
 	// Third receiver should contains the route's handler(s), they are executed by order.
 	app.Handle("GET", "/", func(ctx iris.Context) {
-		// navigate to the middle of $GOPATH/src/github.com/kataras/iris/context/context.go
+		// navigate to the middle of $GOPATH/src/github.com/hidevopsio/iris/context/context.go
 		// to overview all context's method (there a lot of them, read that and you will learn how iris works too)
 		ctx.HTML("Hello from " + ctx.Path()) // Hello from /
 	})
@@ -147,7 +147,7 @@ func donateHandler(ctx iris.Context) {
 
 	// let's pass a value to the next handler
 	// Values is the way handlers(or middleware) are communicating between each other.
-	ctx.Values().Set("donate_url", "https://github.com/kataras/iris#-people")
+	ctx.Values().Set("donate_url", "https://github.com/hidevopsio/iris#-people")
 	ctx.Next() // in order to execute the next handler in the chain, look donate route.
 }
 

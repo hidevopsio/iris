@@ -2,14 +2,14 @@
 
 Please do learn how [net/http](https://golang.org/pkg/net/http/) std package works, first.
 
-This folder provides easy to understand code snippets on how to get started with [iris](https://github.com/kataras/iris) micro web framework.
+This folder provides easy to understand code snippets on how to get started with [iris](https://github.com/hidevopsio/iris) micro web framework.
 
 It doesn't always contain the "best ways" but it does cover each important feature that will make you so excited to GO with iris!
 
 ## Running the examples
 
 1. Install the Go Programming Language, version 1.9+ from [here](https://golang.org/dl).
-2. Install Iris: `go get -u github.com/kataras/iris`
+2. Install Iris: `go get -u github.com/hidevopsio/iris`
 3. Install any external packages that required by the examples
 
 <details>
@@ -42,7 +42,7 @@ go get github.com/jmespath/go-jmespath
 And execute
 
 ```sh
-$ cd $GOPATH/src/github.com/kataras/iris/_examples/overview
+$ cd $GOPATH/src/github.com/hidevopsio/iris/_examples/overview
 $ go run main.go
 ```
 
@@ -58,7 +58,7 @@ $ go run main.go
 - [Tutorial: URL Shortener using BoltDB](https://medium.com/@kataras/a-url-shortener-service-using-go-iris-and-bolt-4182f0b00ae7)
 - [Tutorial: How to turn your Android Device into a fully featured Web Server (**MUST**)](https://twitter.com/ThePracticalDev/status/892022594031017988)
 - [POC: Convert the medium-sized project "Parrot" from native to Iris](https://github.com/iris-contrib/parrot)
-- [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/kataras/iris-starter-kit)
+- [POC: Isomorphic react/hot reloadable/redux/css-modules starter kit](https://github.com/hidevopsio/iris-starter-kit)
 - [Tutorial: DropzoneJS Uploader](tutorial/dropzonejs)
 - [Tutorial: Caddy](tutorial/caddy)
 - [Tutorial:Iris Go Framework + MongoDB](https://medium.com/go-language/iris-go-framework-mongodb-552e349eab9c)
@@ -185,8 +185,8 @@ Serve custom controller's struct's methods as handlers with custom paths(even wi
 
 ```go
 import (
-    "github.com/kataras/iris"
-    "github.com/kataras/iris/mvc"
+    "github.com/hidevopsio/iris"
+    "github.com/hidevopsio/iris/mvc"
 )
 
 func main() {
@@ -243,7 +243,7 @@ useful to call middlewares or when many methods use the same collection of data.
 Optional `EndRequest(ctx)` function to perform any finalization after any method executed.
 
 Inheritance, recursively, see for example our `mvc.SessionController`, it has the `Session *sessions.Session` and `Manager *sessions.Sessions` as embedded fields
-which are filled by its `BeginRequest`, [here](https://github.com/kataras/iris/blob/master/mvc/session_controller.go).
+which are filled by its `BeginRequest`, [here](https://github.com/hidevopsio/iris/blob/master/mvc/session_controller.go).
 This is just an example, you could use the `sessions.Session` which returned from the manager's `Start` as a dynamic dependency to the MVC Application, i.e
 `mvcApp.Register(sessions.New(sessions.Config{Cookie: "iris_session_id"}).Start)`.
 
@@ -291,7 +291,7 @@ func(c *ExampleController) Get() string |
                                 mvc.Result or (mvc.Result, error)
 ```
 
-where [mvc.Result](https://github.com/kataras/iris/blob/master/mvc/go19.go#L10) is an [interface](https://github.com/kataras/iris/blob/master/hero/func_result.go#L18) which contains only that function: `Dispatch(ctx iris.Context)`.
+where [mvc.Result](https://github.com/hidevopsio/iris/blob/master/mvc/go19.go#L10) is an [interface](https://github.com/hidevopsio/iris/blob/master/hero/func_result.go#L18) which contains only that function: `Dispatch(ctx iris.Context)`.
 
 ## Using Iris MVC for code reuse
 
@@ -425,7 +425,7 @@ You can serve [quicktemplate](https://github.com/valyala/quicktemplate) and [her
 
 #### More
 
-https://github.com/kataras/iris/tree/master/middleware#third-party-handlers
+https://github.com/hidevopsio/iris/tree/master/middleware#third-party-handlers
 
 ### Automated API Documentation
 
@@ -439,7 +439,7 @@ The `httptest` package is your way for end-to-end HTTP testing, it uses the http
 
 ### Caching
 
-iris cache library lives on its own [package](https://github.com/kataras/iris/tree/master/cache).
+iris cache library lives on its own [package](https://github.com/hidevopsio/iris/tree/master/cache).
 
 - [Simple](cache/simple/main.go)
 - [Client-Side (304)](cache/client-side/main.go) - part of the iris context core
@@ -453,7 +453,7 @@ iris cache library lives on its own [package](https://github.com/kataras/iris/tr
 
 ### Sessions
 
-iris session manager lives on its own [package](https://github.com/kataras/iris/tree/master/sessions).
+iris session manager lives on its own [package](https://github.com/hidevopsio/iris/tree/master/sessions).
 
 - [Overview](sessions/overview/main.go)
 - [Standalone](sessions/standalone/main.go)
@@ -468,7 +468,7 @@ iris session manager lives on its own [package](https://github.com/kataras/iris/
 
 ### Websockets
 
-iris websocket library lives on its own [package](https://github.com/kataras/iris/tree/master/websocket).
+iris websocket library lives on its own [package](https://github.com/hidevopsio/iris/tree/master/websocket).
 
 The package is designed to work with raw websockets although its API is similar to the famous [socket.io](https://socket.io). I have read an article recently and I felt very contented about my decision to design a **fast** websocket-**only** package for Iris and not a backwards socket.io-like package. You can read that article by following this link: https://medium.com/@ivanderbyl/why-you-don-t-need-socket-io-6848f1c871cd.
 
@@ -483,12 +483,12 @@ The package is designed to work with raw websockets although its API is similar 
 
 ### Typescript Automation Tools
 
-typescript automation tools have their own repository: [https://github.com/kataras/iris/tree/master/typescript](https://github.com/kataras/iris/tree/master/typescript) **it contains examples**
+typescript automation tools have their own repository: [https://github.com/hidevopsio/iris/tree/master/typescript](https://github.com/hidevopsio/iris/tree/master/typescript) **it contains examples**
 
 > I'd like to tell you that you can use your favourite but I don't think you will find such a thing anywhere else.
 
 ### Hey, You
 
-Developers should read the [godocs](https://godoc.org/github.com/kataras/iris) and https://docs.iris-go.com for a better understanding.
+Developers should read the [godocs](https://godoc.org/github.com/hidevopsio/iris) and https://docs.iris-go.com for a better understanding.
 
-Psst, I almost forgot; do not forget to [star or watch](https://github.com/kataras/iris/stargazers) the project in order to stay updated with the latest tech trends, it never takes more than a second!
+Psst, I almost forgot; do not forget to [star or watch](https://github.com/hidevopsio/iris/stargazers) the project in order to stay updated with the latest tech trends, it never takes more than a second!

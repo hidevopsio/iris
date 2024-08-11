@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/middleware/basicauth"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/middleware/basicauth"
 )
 
 func newApp() *iris.Application {

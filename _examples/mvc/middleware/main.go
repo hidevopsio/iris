@@ -5,9 +5,9 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/cache"
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/cache"
+	"github.com/hidevopsio/iris/mvc"
 )
 
 var cacheHandler = cache.Handler(10 * time.Second)

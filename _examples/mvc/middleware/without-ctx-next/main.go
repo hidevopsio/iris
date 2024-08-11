@@ -1,4 +1,5 @@
-/*Package main is a simple example of the behavior change of the execution flow of the handlers,
+/*
+Package main is a simple example of the behavior change of the execution flow of the handlers,
 normally we need the `ctx.Next()` to call the next handler in a route's handler chain,
 but with the new `ExecutionRules` we can change this default behavior.
 Please read below before continue.
@@ -8,11 +9,12 @@ The `Party#SetExecutionRules` alters the execution flow of the route handlers ou
 For example, if for some reason the desired result is the (done or all) handlers to be executed no matter what
 even if no `ctx.Next()` is called in the previous handlers, including the begin(`Use`),
 the main(`Handle`) and the done(`Done`) handlers themselves, then:
-Party#SetExecutionRules(iris.ExecutionRules {
-  Begin: iris.ExecutionOptions{Force: true},
-  Main:  iris.ExecutionOptions{Force: true},
-  Done:  iris.ExecutionOptions{Force: true},
-})
+
+	Party#SetExecutionRules(iris.ExecutionRules {
+	  Begin: iris.ExecutionOptions{Force: true},
+	  Main:  iris.ExecutionOptions{Force: true},
+	  Done:  iris.ExecutionOptions{Force: true},
+	})
 
 Note that if `true` then the only remained way to "break" the handler chain is by `ctx.StopExecution()` now that `ctx.Next()` does not matter.
 
@@ -21,12 +23,13 @@ Reset of these rules (before `Party#Handle`) can be done with `Party#SetExecutio
 
 The most common scenario for its use can be found inside Iris MVC Applications;
 when we want the `Done` handlers of that specific mvc app's `Party`
-to be executed but we don't want to add `ctx.Next()` on the `exampleController#EndRequest`*/
+to be executed but we don't want to add `ctx.Next()` on the `exampleController#EndRequest`
+*/
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/mvc"
 )
 
 func main() {

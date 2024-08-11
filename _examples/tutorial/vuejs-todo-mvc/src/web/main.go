@@ -1,14 +1,14 @@
 package main
 
 import (
-	"github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/todo"
-	"github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers"
+	"github.com/hidevopsio/iris/_examples/tutorial/vuejs-todo-mvc/src/todo"
+	"github.com/hidevopsio/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers"
 
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/sessions"
-	"github.com/kataras/iris/websocket"
+	"github.com/hidevopsio/iris"
+	"github.com/hidevopsio/iris/sessions"
+	"github.com/hidevopsio/iris/websocket"
 
-	"github.com/kataras/iris/mvc"
+	"github.com/hidevopsio/iris/mvc"
 )
 
 func main() {

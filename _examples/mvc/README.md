@@ -1,6 +1,6 @@
 # MVC
 
-![](https://github.com/kataras/iris/raw/master/_examples/mvc/web_mvc_diagram.png)
+![](https://github.com/hidevopsio/iris/raw/master/_examples/mvc/web_mvc_diagram.png)
 
 Iris has **first-class support for the MVC pattern**, you'll not find
 these stuff anywhere else in the Go world.
@@ -19,8 +19,8 @@ via the `BeforeActivation` custom event callback, per-controller. Example:
 
 ```go
 import (
-    "github.com/kataras/iris"
-    "github.com/kataras/iris/mvc"
+    "github.com/hidevopsio/iris"
+    "github.com/hidevopsio/iris/mvc"
 )
 
 func main() {
@@ -77,7 +77,7 @@ useful to call middlewares or when many methods use the same collection of data.
 Optional `EndRequest(ctx)` function to perform any finalization after any method executed.
 
 Inheritance, recursively, see for example our `mvc.SessionController`, it has the `Session *sessions.Session` and `Manager *sessions.Sessions` as embedded fields
-which are filled by its `BeginRequest`, [here](https://github.com/kataras/iris/blob/master/mvc/session_controller.go).
+which are filled by its `BeginRequest`, [here](https://github.com/hidevopsio/iris/blob/master/mvc/session_controller.go).
 This is just an example, you could use the `sessions.Session` as a dependency to the MVC Application, i.e
 `mvcApp.Register(sessions.New(sessions.Config{Cookie: "iris_session_id"}).Start)`.
 
@@ -125,7 +125,7 @@ func(c *ExampleController) Get() string |
                                 mvc.Result or (mvc.Result, error)
 ```
 
-where [mvc.Result](https://github.com/kataras/iris/blob/master/mvc/func_result.go) is an interface which contains only that function: `Dispatch(ctx iris.Context)`.
+where [mvc.Result](https://github.com/hidevopsio/iris/blob/master/mvc/func_result.go) is an interface which contains only that function: `Dispatch(ctx iris.Context)`.
 
 ## Using Iris MVC for code reuse
 
@@ -143,4 +143,4 @@ If you're new to back-end web development read about the MVC architectural patte
 - [Websocket Controller](websocket) **NEW**
 - [Register Middleware](middleware) **NEW**
 
-Folder structure guidelines can be found at the [_examples/#structuring](https://github.com/kataras/iris/tree/master/_examples/#structuring) section.
+Folder structure guidelines can be found at the [_examples/#structuring](https://github.com/hidevopsio/iris/tree/master/_examples/#structuring) section.

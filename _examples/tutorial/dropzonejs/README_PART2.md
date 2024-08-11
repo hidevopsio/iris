@@ -54,7 +54,7 @@ import (
     "strings"
     "sync"
 
-    "github.com/kataras/iris"
+    "github.com/hidevopsio/iris"
 
     "github.com/nfnt/resize" // $ go get -u github.com/nfnt/resize
 )
@@ -302,7 +302,7 @@ If you have done it successfully. Now go and upload some images and reload the u
 - http://www.dropzonejs.com/#server-side-implementation
 - https://www.startutorial.com/articles/view/how-to-build-a-file-upload-form-using-dropzonejs-and-php
 - https://docs.iris-go.com
-- https://github.com/kataras/iris/tree/master/_examples/tutorial/dropzonejs
+- https://github.com/hidevopsio/iris/tree/master/_examples/tutorial/dropzonejs
 
 ## The end
 

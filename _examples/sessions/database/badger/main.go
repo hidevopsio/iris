@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 
-	"github.com/kataras/iris/sessions"
-	"github.com/kataras/iris/sessions/sessiondb/badger"
+	"github.com/hidevopsio/iris/sessions"
+	"github.com/hidevopsio/iris/sessions/sessiondb/badger"
 )
 
 func main() {

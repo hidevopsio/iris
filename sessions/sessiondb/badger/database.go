@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kataras/iris/core/errors"
-	"github.com/kataras/iris/sessions"
+	"github.com/hidevopsio/iris/core/errors"
+	"github.com/hidevopsio/iris/sessions"
 
 	"github.com/dgraph-io/badger"
 	"github.com/kataras/golog"

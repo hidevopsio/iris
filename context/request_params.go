@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kataras/iris/core/memstore"
+	"github.com/hidevopsio/iris/core/memstore"
 )
 
 // RequestParams is a key string - value string storage which
@@ -101,7 +101,7 @@ var (
 	//     }
 	// }
 	//
-	// Read https://github.com/kataras/iris/tree/master/_examples/routing/macros for more details.
+	// Read https://github.com/hidevopsio/iris/tree/master/_examples/routing/macros for more details.
 	ParamResolvers = map[reflect.Type]func(paramIndex int) interface{}{
 		reflect.TypeOf(""): func(paramIndex int) interface{} {
 			return func(ctx Context) string {
@@ -172,7 +172,9 @@ var (
 // and the parameter's index based on the registered path.
 // Usage: nameResolver := ParamResolverByKindAndKey(reflect.TypeOf(""), 0)
 // Inside a Handler:      nameResolver.Call(ctx)[0]
-//        it will return the reflect.Value Of the exact type of the parameter(based on the path parameters and macros).
+//
+//	it will return the reflect.Value Of the exact type of the parameter(based on the path parameters and macros).
+//
 // It is only useful for dynamic binding of the parameter, it is used on "hero" package and it should be modified
 // only when Macros are modified in such way that the default selections for the available go std types are not enough.
 //

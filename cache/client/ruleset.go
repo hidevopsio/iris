@@ -1,10 +1,10 @@
 package client
 
 import (
-	"github.com/kataras/iris/cache/cfg"
-	"github.com/kataras/iris/cache/client/rule"
-	"github.com/kataras/iris/cache/ruleset"
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/cache/cfg"
+	"github.com/hidevopsio/iris/cache/client/rule"
+	"github.com/hidevopsio/iris/cache/ruleset"
+	"github.com/hidevopsio/iris/context"
 )
 
 // DefaultRuleSet is a list of the default pre-cache validators

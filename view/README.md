@@ -18,7 +18,7 @@ like Layout, Template Funcs, Party-specific layout, partial rendering and more.
 // file: main.go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -65,7 +65,7 @@ func main() {
 ```go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -121,7 +121,7 @@ Example code:
 ```go
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
     app := iris.New()
@@ -148,7 +148,7 @@ func hi(ctx iris.Context) {
 }
 ```
 
-A real example can be found here: https://github.com/kataras/iris/tree/master/_examples/view/embedding-templates-into-app.
+A real example can be found here: https://github.com/hidevopsio/iris/tree/master/_examples/view/embedding-templates-into-app.
 
 ## Reload
 
@@ -165,13 +165,13 @@ app.RegisterView(pugEngine)
 
 ## Examples
 
-- [Overview](https://github.com/kataras/iris/blob/master/_examples/view/overview/main.go)
-- [Hi](https://github.com/kataras/iris/blob/master/_examples/view/template_html_0/main.go)
-- [A simple Layout](https://github.com/kataras/iris/blob/master/_examples/view/template_html_1/main.go)
-- [Layouts: `yield` and `render` tmpl funcs](https://github.com/kataras/iris/blob/master/_examples/view/template_html_2/main.go)
-- [The `urlpath` tmpl func](https://github.com/kataras/iris/blob/master/_examples/view/template_html_3/main.go)
-- [The `url` tmpl func](https://github.com/kataras/iris/blob/master/_examples/view/template_html_4/main.go)
-- [Inject Data Between Handlers](https://github.com/kataras/iris/blob/master/_examples/view/context-view-data/main.go)
-- [Embedding Templates Into App Executable File](https://github.com/kataras/iris/blob/master/_examples/view/embedding-templates-into-app/main.go)
+- [Overview](https://github.com/hidevopsio/iris/blob/master/_examples/view/overview/main.go)
+- [Hi](https://github.com/hidevopsio/iris/blob/master/_examples/view/template_html_0/main.go)
+- [A simple Layout](https://github.com/hidevopsio/iris/blob/master/_examples/view/template_html_1/main.go)
+- [Layouts: `yield` and `render` tmpl funcs](https://github.com/hidevopsio/iris/blob/master/_examples/view/template_html_2/main.go)
+- [The `urlpath` tmpl func](https://github.com/hidevopsio/iris/blob/master/_examples/view/template_html_3/main.go)
+- [The `url` tmpl func](https://github.com/hidevopsio/iris/blob/master/_examples/view/template_html_4/main.go)
+- [Inject Data Between Handlers](https://github.com/hidevopsio/iris/blob/master/_examples/view/context-view-data/main.go)
+- [Embedding Templates Into App Executable File](https://github.com/hidevopsio/iris/blob/master/_examples/view/embedding-templates-into-app/main.go)
 
-You can serve [quicktemplate](https://github.com/valyala/quicktemplate) files too, simply by using the `context#ResponseWriter`, take a look at the [iris/_examples/http_responsewriter/quicktemplate](https://github.com/kataras/iris/tree/master/_examples/http_responsewriter/quicktemplate) example.
+You can serve [quicktemplate](https://github.com/valyala/quicktemplate) files too, simply by using the `context#ResponseWriter`, take a look at the [iris/_examples/http_responsewriter/quicktemplate](https://github.com/hidevopsio/iris/tree/master/_examples/http_responsewriter/quicktemplate) example.

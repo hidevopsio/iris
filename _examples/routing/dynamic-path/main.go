@@ -3,7 +3,7 @@ package main
 import (
 	"regexp"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 
 	// Iris, like net/http std package registers route's handlers
 	// by a Handler, the iris' type of handler is just a func(ctx iris.Context)
-	// where context comes from github.com/kataras/iris/context.
+	// where context comes from github.com/hidevopsio/iris/context.
 	//
 	// Iris has the easiest and the most powerful routing process you have ever meet.
 	//

@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/netutil"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/netutil"
 )
 
 const (
@@ -46,7 +46,9 @@ func New(secret string) context.Handler {
 }
 
 // SiteFerify accepts  context and the secret key(https://www.google.com/recaptcha)
-//  and returns the google's recaptcha response, if `response.Success` is true
+//
+//	and returns the google's recaptcha response, if `response.Success` is true
+//
 // then validation passed.
 //
 // Use `New` for middleware use instead.
@@ -110,22 +112,24 @@ var recaptchaForm = `<form action="%s" method="POST">
 // Example Code:
 //
 // Method: "POST" | Path: "/contact"
-// func postContact(ctx context.Context) {
-// 	// [...]
-// 	response := recaptcha.SiteFerify(ctx, recaptchaSecret)
 //
-// 	if response.Success {
-// 		// [your action here, i.e sendEmail(...)]
-// 	}
+//	func postContact(ctx context.Context) {
+//		// [...]
+//		response := recaptcha.SiteFerify(ctx, recaptchaSecret)
 //
-// 	ctx.JSON(response)
-// }
+//		if response.Success {
+//			// [your action here, i.e sendEmail(...)]
+//		}
+//
+//		ctx.JSON(response)
+//	}
 //
 // Method: "GET" | Path: "/contact"
-// func getContact(ctx context.Context) {
-// 	// render the recaptcha form
-// 	ctx.HTML(recaptcha.GetFormHTML(recaptchaPublic, "/contact"))
-// }
+//
+//	func getContact(ctx context.Context) {
+//		// render the recaptcha form
+//		ctx.HTML(recaptcha.GetFormHTML(recaptchaPublic, "/contact"))
+//	}
 func GetFormHTML(dataSiteKey string, postActionRelativePath string) string {
 	return fmt.Sprintf(recaptchaForm, postActionRelativePath, dataSiteKey)
 }

@@ -3,8 +3,8 @@ package handlerconv
 import (
 	"net/http"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
 )
 
 var errHandler = errors.New(`
@@ -18,9 +18,10 @@ var errHandler = errors.New(`
 // FromStd converts native http.Handler & http.HandlerFunc to context.Handler.
 //
 // Supported form types:
-// 		 .FromStd(h http.Handler)
-// 		 .FromStd(func(w http.ResponseWriter, r *http.Request))
-// 		 .FromStd(func(w http.ResponseWriter, r *http.Request, next http.HandlerFunc))
+//
+//	.FromStd(h http.Handler)
+//	.FromStd(func(w http.ResponseWriter, r *http.Request))
+//	.FromStd(func(w http.ResponseWriter, r *http.Request, next http.HandlerFunc))
 func FromStd(handler interface{}) context.Handler {
 	switch handler.(type) {
 	case context.Handler:

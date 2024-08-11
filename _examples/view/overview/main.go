@@ -1,6 +1,6 @@
 package main
 
-import "github.com/kataras/iris"
+import "github.com/hidevopsio/iris"
 
 func main() {
 	app := iris.New()
@@ -33,8 +33,8 @@ func main() {
 /*
 Note:
 
-In case you're wondering, the code behind the view engines derives from the "github.com/kataras/iris/view" package,
-access to the engines' variables can be granded by "github.com/kataras/iris" package too.
+In case you're wondering, the code behind the view engines derives from the "github.com/hidevopsio/iris/view" package,
+access to the engines' variables can be granded by "github.com/hidevopsio/iris" package too.
 
     iris.HTML(...) is a shortcut of view.HTML(...)
     iris.Django(...)     >> >>      view.Django(...)

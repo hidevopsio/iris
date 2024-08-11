@@ -7,10 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kataras/iris/context"
+	"github.com/hidevopsio/iris/context"
 )
 
-//
 // randStringBytesMaskImprSrc helps us to generate random paths for the test,
 // the below piece of code is external, as an answer to a stackoverflow question.
 //

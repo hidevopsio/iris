@@ -5,10 +5,10 @@ package controllers
 import (
 	"errors"
 
-	"github.com/kataras/iris/_examples/mvc/overview/datamodels"
-	"github.com/kataras/iris/_examples/mvc/overview/services"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/datamodels"
+	"github.com/hidevopsio/iris/_examples/mvc/overview/services"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 // MovieController is our /movies controller.
@@ -23,14 +23,16 @@ type MovieController struct {
 // curl -i http://localhost:8080/movies
 //
 // The correct way if you have sensitive data:
-// func (c *MovieController) Get() (results []viewmodels.Movie) {
-// 	data := c.Service.GetAll()
 //
-// 	for _, movie := range data {
-// 		results = append(results, viewmodels.Movie{movie})
-// 	}
-// 	return
-// }
+//	func (c *MovieController) Get() (results []viewmodels.Movie) {
+//		data := c.Service.GetAll()
+//
+//		for _, movie := range data {
+//			results = append(results, viewmodels.Movie{movie})
+//		}
+//		return
+//	}
+//
 // otherwise just return the datamodels.
 func (c *MovieController) Get() (results []datamodels.Movie) {
 	return c.Service.GetAll()

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/core/errors"
+	"github.com/hidevopsio/iris/context"
+	"github.com/hidevopsio/iris/core/errors"
 )
 
 // Router is the "director".
@@ -93,7 +93,9 @@ func (router *Router) BuildRouter(cPool *context.Pool, requestHandler RequestHan
 }
 
 // Downgrade "downgrades", alters the router supervisor service(Router.mainHandler)
-//  algorithm to a custom one,
+//
+//	algorithm to a custom one,
+//
 // be aware to change the global variables of 'ParamStart' and 'ParamWildcardStart'.
 // can be used to implement a custom proxy or
 // a custom router which should work with raw ResponseWriter, *Request

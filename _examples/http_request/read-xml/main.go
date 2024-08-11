@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/xml"
 
-	"github.com/kataras/iris"
+	"github.com/hidevopsio/iris"
 )
 
 func main() {
