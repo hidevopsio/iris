@@ -7,13 +7,13 @@
 // (because it used "context" to define the user but we don't need that so a simple iris.FromStd wouldn't work as expected.)
 package main
 
-// $ go get -u github.com/dgrijalva/jwt-go
+// $ go get -u github.com/golang-jwt/jwt
 // $ go run main.go
 
 import (
 	"github.com/hidevopsio/iris"
 
-	"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt"
 	jwtmiddleware "github.com/hidevopsio/middleware/jwt"
 )
 

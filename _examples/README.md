@@ -30,7 +30,7 @@ go get github.com/valyala/quicktemplate
 go get github.com/shiyanhui/hero
 go get github.com/go-xorm/xorm
 go get github.com/nfnt/resize
-go get github.com/dgrijalva/jwt-go
+go get github.com/golang-jwt/jwt
 go get github.com/newrelic/go-agent
 go get github.com/valyala/tcplisten
 go get github.com/kataras/bindata/cmd/bindata

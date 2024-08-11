@@ -13,7 +13,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/flosch/pongo2 v0.0.0-20180809100617-24195e6d38b0
 	github.com/gomodule/redigo v2.0.0+incompatible
-	github.com/gorilla/websocket v1.4.0
+	github.com/gorilla/websocket v1.4.1
 	github.com/hidevopsio/formBinder v0.0.0-20240811094544-2118e9d3668d
 	github.com/hidevopsio/go-uuid v0.0.0-20240811102623-0749af16addf
 	github.com/hidevopsio/golog v0.0.0-20240811115351-6b4a7711e704

@@ -48,8 +48,8 @@ github.com/gopherjs/gopherjs v1.17.2 h1:fQnZVsXk8uxXIStYb0N4bGk7jeyTalG/wsZjQ25d
 github.com/gopherjs/gopherjs v1.17.2/go.mod h1:pRRIvn/QzFLrKfvEz3qUuEhtE/zLCWfreZ6J5gM2i+k=
 github.com/gorilla/css v1.0.0 h1:BQqNyPTi50JCFMTw/b67hByjMVXZRwGha6wxVGkeihY=
 github.com/gorilla/css v1.0.0/go.mod h1:Dn721qIggHpt4+EFCcTLTU/vk5ySda2ReITrtgBl60c=
-github.com/gorilla/websocket v1.4.0 h1:WDFjx/TMzVgy9VdMMQi2K2Emtwi2QcUQsztZ/zLaH/Q=
-github.com/gorilla/websocket v1.4.0/go.mod h1:E7qHFY5m1UJ88s3WnNqhKjPHQ0heANvMoAMk2YaljkQ=
+github.com/gorilla/websocket v1.4.1 h1:q7AeDBpnBk8AogcD4DSag/Ukw/KV+YhzLj2bP5HvKCM=
+github.com/gorilla/websocket v1.4.1/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/hidevopsio/formBinder v0.0.0-20240811094544-2118e9d3668d h1:CEpO3c0aRsegynMoxEpCysmy/lePVmtCSU6+qOWb/Pk=
 github.com/hidevopsio/formBinder v0.0.0-20240811094544-2118e9d3668d/go.mod h1:PFEZAcn66wWTbWkpkS+omAVhIVIampnTIEh3akUA3pU=
 github.com/hidevopsio/go-uuid v0.0.0-20240811102623-0749af16addf h1:/htNDo2bTYeoigbMtMkWJIzJtEoH3VUdBr+lRrO28kI=
