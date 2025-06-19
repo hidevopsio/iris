@@ -1,8 +1,6 @@
 module github.com/hidevopsio/iris
 
-go 1.23.0
-
-toolchain go1.23.10
+go 1.24.2
 
 require (
 	github.com/BurntSushi/toml v0.3.1
